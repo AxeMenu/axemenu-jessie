@@ -1,0 +1,8 @@
+{
+"shell-version": ["3.2","3.4","3.5.2"],
+"uuid": "axemenu@wheezy",
+"name": "Axe Menu",
+"description": "Big and beautiful menu for gnome-shell.",
+"url": "http://k210.org/axemenu/",
+"version": 28
+}

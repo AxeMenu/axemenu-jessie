@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schemalist>
+	<schema path="/org/gnome/shell/extensions/axemenu/keybindings/" id="org.gnome.shell.extensions.axemenu.keybindings" >
+		<key type="as" name="axemenu-toggle">
+			<default><![CDATA[['Super_R']]]></default>
+			<summary>Toggle AxeMenu.</summary>
+		</key>
+	</schema>
+</schemalist>

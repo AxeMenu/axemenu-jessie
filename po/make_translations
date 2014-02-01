@@ -1,0 +1,21 @@
+#!/bin/sh
+
+# this is a script which avoids having to install intltool just to
+# translate four phrases
+
+# apt-get install gettext
+
+# to add a translation - add the language to LINGUAS, copy
+# en_GB.po to a po file for the language, and then run this script
+
+for file in `cat LINGUAS`
+do
+
+if ! [ -d ../locale/$file/LC_MESSAGES ]; then
+  mkdir -p ../locale/$file/LC_MESSAGES
+fi
+
+msgfmt $file.po
+mv messages.mo ../locale/$file/LC_MESSAGES/axemenu.mo
+
+done

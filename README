@@ -1,0 +1,30 @@
+Control.
+--------
+- Right click on the menu to open settings manager.
+- Left click to open the menu >> start typing right away to search for what you're looking for >> press Enter to open the first search result.
+- Press "Tab" on your keyboard to switch between Favorites and All applications.
+- The bold and underlined texts are your favorites.
+- To add an app to favorites, hover that app, right click. A box will appear, click Yes to confirm.
+- To remove an app from favorite, hover that app (the bold and underlined ones), right click. A box will appear, click Yes to confirm.
+
+
+Config file.
+------------
+If you want to save the customized configuration of AxeMenu, backup
+$HOME/.config/axemenu.conf
+
+
+A few words about the global key bindings.
+------------------------------------------
+The menu is hard bound to a Super_R button.
+
+For change default key binding in:
+-shell v3.2:
+run
+gconftool-2 -s --type string "/apps/metacity/global_keybindings/run_command_12" '<your_shortcut>'
+
+-shell 3.4+:
+change "Super_R" substring in $HOME/.local/share/gnome-shell/extensions/axemenu@wheezy/schemas/org.gnome.shell.extensions.axemenu.keybindings.gschema.xml
+run
+glib-compile-schemas $HOME/.local/share/gnome-shell/extensions/axemenu@wheezy/schemas
+restart shell

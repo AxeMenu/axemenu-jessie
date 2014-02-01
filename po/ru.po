@@ -1,0 +1,201 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: axeMenu 0.8.2\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Applications"
+msgstr "Приложения"
+
+msgid "Favorites"
+msgstr "Избранное"
+
+msgid "All applications"
+msgstr "Все приложения"
+
+msgid "Type to search..."
+msgstr "Поиск..."
+
+msgid "Menu"
+msgstr "Меню"
+
+msgid "Places"
+msgstr "Места"
+
+msgid "System"
+msgstr "Система"
+
+msgid "Power Off"
+msgstr "Выключить.."
+
+msgid "Logout"
+msgstr "Завершить сеанс.."
+
+msgid "Restart Shell"
+msgstr "Перезапустить Shell"
+
+msgid "Computer"
+msgstr "Компьютер"
+
+msgid "Network"
+msgstr "Сеть"
+
+msgid "Search"
+msgstr "Поиск"
+
+msgid "Bookmarks"
+msgstr "Закладки"
+
+msgid "Home Folder"
+msgstr "Домашняя папка"
+
+msgid "Desktop"
+msgstr "Рабочий стол"
+
+msgid "AxeMenu settings"
+msgstr "Настройки AxeMenu"
+
+msgid "Start with favorites"
+msgstr "Начинать с \"Избранного\""
+
+msgid "Display Activites button"
+msgstr "Показывать кнопку \"Обзор\""
+
+msgid "Display Places section"
+msgstr "Раздел \"Места\" в левой панели"
+
+msgid "Display Bookmarks section"
+msgstr "Раздел \"Закладки\" в левой панели"
+
+msgid "Display System section"
+msgstr "Раздел \"Система\" в левой панели"
+
+msgid "Display Shutdown section"
+msgstr "Раздел \"Выключить\" в левой панели"
+
+msgid "Favorites has label"
+msgstr "Текст на кнопках в избранном"
+
+msgid "Favorites columns count"
+msgstr "Количество столбцов в избранном"
+
+msgid "Favorites icons size (px)"
+msgstr "Размер иконок избранного (px)"
+
+msgid "Max bookmarks count (zero for show all)"
+msgstr "Количество отображаемых закладок"
+
+msgid "Category icons size (px)"
+msgstr "Размер иконок категорий (px)"
+
+msgid "Left pane icons size (px)"
+msgstr "Размер иконок левой панели (px)"
+
+msgid "Applications icons size (px)"
+msgstr "Размер иконок приложений (px)"
+
+msgid "Main menu width (px)"
+msgstr "Ширина главного меню (px)"
+
+msgid "Left pane width (px)"
+msgstr "Ширина левой панели (px)"
+
+msgid "Categories box width (px)"
+msgstr "Ширина панели категорий (px)"
+
+msgid "System Applications (Left pane)"
+msgstr "Системные приложения в левой панели"
+
+msgid "Save"
+msgstr "Сохранить"
+
+msgid "Cancel"
+msgstr "Отмена"
+
+msgid "Button label"
+msgstr "Текст на кнопке"
+
+msgid "Activites button rightmost"
+msgstr "Кнопка \"Обзор\" правее всех"
+
+msgid "\"Menu\" button with icon"
+msgstr "Иконка на кнопке \"Меню\""
+
+msgid "Yes"
+msgstr "Да"
+
+msgid "No"
+msgstr "Нет"
+
+msgid "Remove \"%s\" from favorites?"
+msgstr "Удалить \"%s\" из избранного?"
+
+msgid "Add \"%s\" to favorites?"
+msgstr "Добавить \"%s\" в избранное?"
+
+msgid "Apply"
+msgstr "Применить"
+
+msgid "Main"
+msgstr "Основные"
+
+msgid "Left pane"
+msgstr "Левая панель"
+
+msgid "Right pane"
+msgstr "Правая панель"
+
+msgid "About"
+msgstr "О расширении"
+
+msgid "Hot corner"
+msgstr "\"Горячий\" угол"
+
+msgid "Icon name"
+msgstr "Название иконки"
+
+msgid "Additionally"
+msgstr "Дополнительно"
+
+msgid "Width of search entry (px)"
+msgstr "Ширина строки поиска (px)"
+
+msgid "Display Search button"
+msgstr "Отображать кнопку поиска"
+
+msgid "Recent documents"
+msgstr "Недавние документы"
+
+msgid "Fixed height of menu"
+msgstr "Фиксированная высота меню"
+
+msgid "AxeMenu in Hot corner"
+msgstr "AxeMenu в \"Горячем углу\""
+
+msgid "Select Category by click"
+msgstr "Выбор категории по клику"
+
+msgid "Display bottom pane"
+msgstr "Отображать нижнюю панель"
+
+msgid "Categories box has scroll"
+msgstr "Панель категорий с прокруткой"
+
+msgid "Display Left pane"
+msgstr "Отображать левую панель"
+
+msgid "Search tool"
+msgstr "Инструмент поиска"
+
+msgid "Reset to default"
+msgstr "Восстановить значения по умолчанию"
+
+msgid "Reset"
+msgstr "Сбросить"
+
+msgid "Main icons size (px)"
+msgstr "Размер главной иконки (px)"
+

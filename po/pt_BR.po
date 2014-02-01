@@ -1,0 +1,201 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: axeMenu 0.8.2\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Applications"
+msgstr "Applicativos"
+
+msgid "Favorites"
+msgstr "Favoritos"
+
+msgid "All applications"
+msgstr "Todos os aplicativos"
+
+msgid "Type to search..."
+msgstr "Digite para pesquisar..."
+
+msgid "Menu"
+msgstr "Menu"
+
+msgid "Places"
+msgstr "Locais"
+
+msgid "System"
+msgstr "Systema"
+
+msgid "Power Off"
+msgstr "Desligar"
+
+msgid "Logout"
+msgstr "Efetuar logout"
+
+msgid "Restart Shell"
+msgstr "Reiniciar o Shell"
+
+msgid "Computer"
+msgstr "Computador"
+
+msgid "Network"
+msgstr "Rede"
+
+msgid "Search"
+msgstr "Pesquisar"
+
+msgid "Bookmarks"
+msgstr "Pastas Pessoais"
+
+msgid "Home Folder"
+msgstr "Pasta Home"
+
+msgid "Desktop"
+msgstr "Área de trabalho"
+
+msgid "AxeMenu settings"
+msgstr "Configurações do AxeMenu"
+
+msgid "Start with favorites"
+msgstr "Iniciar com Favoritos"
+
+msgid "Display Activites button"
+msgstr "Mostrar botão Atividades"
+
+msgid "Display Places section"
+msgstr "Mostrar seção Locais"
+
+msgid "Display Bookmarks section"
+msgstr "Mostrar seção Pastas Pessoais"
+
+msgid "Display System section"
+msgstr "Mostrar seção Sistema"
+
+msgid "Display Shutdown section"
+msgstr "Mostrar seção Encerrar"
+
+msgid "Favorites has label"
+msgstr "Favoritos com texto"
+
+msgid "Favorites columns count"
+msgstr "Número de colunas nos Favoritos"
+
+msgid "Favorites icons size (px)"
+msgstr "Tamanho dos ícones nos Favoritos (px)"
+
+msgid "Max bookmarks count (zero for show all)"
+msgstr "Número máximo de Pastas Pessoais (zero para mostrar todas)"
+
+msgid "Category icons size (px)"
+msgstr "Tamanho dos ícones da Lista de Categorias (px)"
+
+msgid "Left pane icons size (px)"
+msgstr "Tamanho dos ícones do painel esquerdo"
+
+msgid "Applications icons size (px)"
+msgstr "Tamanho dos ícones dos aplicativos"
+
+msgid "Main box width (px)"
+msgstr "Largura do painel principal"
+
+msgid "Left pane width (px)"
+msgstr "Largura do painel esquerdo"
+
+msgid "Categories box width (px)"
+msgstr "Largura da Lista de Categorias"
+
+msgid "System Applications (Left pane)"
+msgstr "Aplicativos de Sistema (Painel esquerdo)"
+
+msgid "Save"
+msgstr "Salvar"
+
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgid "Button label"
+msgstr "Texto do botão"
+
+msgid "Activites button rightmost"
+msgstr "Botão Atividades à direita de tudo"
+
+msgid "\"Menu\" button with icon"
+msgstr "Botão \"Menu\" com ícone"
+
+msgid "Yes"
+msgstr "Sim"
+
+msgid "No"
+msgstr "Não"
+
+msgid "Remove \"%s\" from favorites?"
+msgstr "Excluir \"%s\" dos favoritos?"
+
+msgid "Add \"%s\" to favorites?"
+msgstr "Adicionar \"%s\" aos favoritos?"
+
+msgid "Apply"
+msgstr "Aplicar"
+
+msgid "Main"
+msgstr "Principal"
+
+msgid "Left pane"
+msgstr "Painel esquerdo"
+
+msgid "Right pane"
+msgstr "Painel direito"
+
+msgid "About"
+msgstr "Sobre"
+
+msgid "Hot corner"
+msgstr "Canto-Inteligente (Hot corner)"
+
+msgid "Icon name"
+msgstr "Nome do ícone"
+
+msgid "Additionally"
+msgstr "Complementos"
+
+msgid "Width of search entry (px)"
+msgstr "Largura da caixa de pesquisa (px)"
+
+msgid "Display Search button"
+msgstr "Mostrar botão Pesquisar"
+
+msgid "Recent documents"
+msgstr "Documentos recentes"
+
+msgid "Fixed height of menu"
+msgstr "Altura fixa do menu"
+
+msgid "AxeMenu in Hot corner"
+msgstr "AxeMenu no Canto-Inteligente (Hot corner)"
+
+msgid "Select Category by click"
+msgstr "Selecionar Categoria com clique"
+
+msgid "Display bottom pane"
+msgstr "Mostrar painel inferior"
+
+msgid "Categories box has scroll"
+msgstr "Lista de Categorias com barras de rolagem"
+
+msgid "Display Left pane"
+msgstr "Mostrar Painel esquerdo"
+
+msgid "Search tool"
+msgstr "Ferramenta de pesquisa"
+
+msgid "Reset to default"
+msgstr "Redefinir para padrão"
+
+msgid "Reset"
+msgstr "Redefinir"
+
+msgid "Main icons size (px)"
+msgstr "Tamanho do ícone principal (px)"
+

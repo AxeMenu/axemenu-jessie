@@ -1,0 +1,201 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: axeMenu 0.8.2\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Applications"
+msgstr "אפליקציות"
+
+msgid "Favorites"
+msgstr "מועדפים"
+
+msgid "All applications"
+msgstr "כל האפליקציות"
+
+msgid "Type to search..."
+msgstr "סוג לחיפוש..."
+
+msgid "Menu"
+msgstr "תפריט"
+
+msgid "Places"
+msgstr "מיקומים"
+
+msgid "System"
+msgstr "מערכת"
+
+msgid "Power Off"
+msgstr "כיבוי"
+
+msgid "Logout"
+msgstr "יציאה"
+
+msgid "Restart Shell"
+msgstr "איתחול Shell"
+
+msgid "Computer"
+msgstr "מחשב"
+
+msgid "Network"
+msgstr "רשת"
+
+msgid "Search"
+msgstr "חיפוש"
+
+msgid "Bookmarks"
+msgstr "סימניות"
+
+msgid "Home Folder"
+msgstr "סיפרית הבית"
+
+msgid "Desktop"
+msgstr "שולחן עבודה"
+
+msgid "AxeMenu settings"
+msgstr "הגדרות AxeMenu"
+
+msgid "Start with favorites"
+msgstr "הפעלה עם המועדפים"
+
+msgid "Display Activites button"
+msgstr "הצגת כפתור Activities"
+
+msgid "Display Places section"
+msgstr "הצגת מקטע המיקומים"
+
+msgid "Display Bookmarks section"
+msgstr "הצגת מקטע הסימניות"
+
+msgid "Display System section"
+msgstr "הצגת מקטע המערכת"
+
+msgid "Display Shutdown section"
+msgstr "הצגת מקטע כיבוי"
+
+msgid "Favorites has label"
+msgstr "מועדפים עם תווית"
+
+msgid "Favorites columns count"
+msgstr "מספר טורים למועדפים"
+
+msgid "Favorites icons size (px)"
+msgstr "גודל צלמית המועדפים (px)"
+
+msgid "Max bookmarks count (zero for show all)"
+msgstr "מספר סימניות מקסימאלי (0 עבור הכל)"
+
+msgid "Category icons size (px)"
+msgstr "גודל צלמיות קטגוריה (px)"
+
+msgid "Left pane icons size (px)"
+msgstr "גודל צלמיות בחלון שמאל (px)"
+
+msgid "Applications icons size (px)"
+msgstr "גודל צלמיות אפליקציות (px)"
+
+msgid "Main box width (px)"
+msgstr "רוחב תיבה ראשית (px)"
+
+msgid "Left pane width (px)"
+msgstr "רוחב חלונית שמאלית (px)"
+
+msgid "Categories box width (px)"
+msgstr "רוחב תיבת קטיגוריות (px)"
+
+msgid "System Applications (Left pane)"
+msgstr "אפליקציות מערכת (חלונית שמאל)"
+
+msgid "Save"
+msgstr "שמירה"
+
+msgid "Cancel"
+msgstr "ביטול"
+
+msgid "Button label"
+msgstr "תווית כפתור"
+
+msgid "Activites button rightmost"
+msgstr "כפתור Activities בצד הימני"
+
+msgid "\"Menu\" button with icon"
+msgstr "כפתור \"תפריט\" עם צלמית"
+
+msgid "Yes"
+msgstr "כן"
+
+msgid "No"
+msgstr "לא"
+
+msgid "Remove \"%s\" from favorites?"
+msgstr "הסרת \"%s\" מהמועדפים?"
+
+msgid "Add \"%s\" to favorites?"
+msgstr "הוספת \"%s\" למועדפים?"
+
+msgid "Apply"
+msgstr "ביצוע"
+
+msgid "Main"
+msgstr "ראשי"
+
+msgid "Left pane"
+msgstr "חלונית שמאל"
+
+msgid "Right pane"
+msgstr "חלונית ימין"
+
+msgid "About"
+msgstr "אודות"
+
+msgid "Hot corner"
+msgstr "פינה חמה"
+
+msgid "Icon name"
+msgstr "שם צלמית"
+
+msgid "Additionally"
+msgstr "תוספות"
+
+msgid "Width of search entry (px)"
+msgstr "רוחב תיבת חיפוש (px)"
+
+msgid "Display Search button"
+msgstr "הצגת כפתור חיפוש"
+
+msgid "Recent documents"
+msgstr "מסמכים אחרונית"
+
+msgid "Fixed height of menu"
+msgstr "גובה קבוע לתפריט"
+
+msgid "AxeMenu in Hot corner"
+msgstr "AxeMenu בפינה החמה"
+
+msgid "Select Category by click"
+msgstr "בחירת קטיגוריה ע\"י לחיצה"
+
+msgid "Display bottom pane"
+msgstr "הצגת חלונית תחתונה"
+
+msgid "Categories box has scroll"
+msgstr "תיבת הקטיגוריות עם פס גלילה"
+
+msgid "Display Left pane"
+msgstr "הצגת חלונית שמאלית"
+
+msgid "Search tool"
+msgstr "כלי חיפוש"
+
+msgid "Reset to default"
+msgstr "איפוס להגדרות ברירת המחדל"
+
+msgid "Reset"
+msgstr "איפוס"
+
+msgid "Main icons size (px)"
+msgstr "גודל צלמיות ראשיות (px)"
+

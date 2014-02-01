@@ -1,0 +1,201 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: axeMenu 0.8.2\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Applications"
+msgstr "Applications"
+
+msgid "Favorites"
+msgstr "Favoris"
+
+msgid "All applications"
+msgstr "Toutes les applications"
+
+msgid "Type to search..."
+msgstr "Rechercher..."
+
+msgid "Menu"
+msgstr "Menu"
+
+msgid "Places"
+msgstr "Emplacements"
+
+msgid "System"
+msgstr "Système"
+
+msgid "Power Off"
+msgstr "Éteindre"
+
+msgid "Logout"
+msgstr "Fermer la session"
+
+msgid "Restart Shell"
+msgstr "Redémarrer le Shell"
+
+msgid "Computer"
+msgstr "Poste de travail"
+
+msgid "Network"
+msgstr "Réseau"
+
+msgid "Search"
+msgstr "Recherche"
+
+msgid "Bookmarks"
+msgstr "Signets"
+
+msgid "Home Folder"
+msgstr "Dossier Personnel"
+
+msgid "Desktop"
+msgstr "Bureau"
+
+msgid "AxeMenu settings"
+msgstr "Paramètres AxeMenu"
+
+msgid "Start with favorites"
+msgstr "Démarrer avec les favoris"
+
+msgid "Display Activites button"
+msgstr "Afficher le bouton Activités"
+
+msgid "Display Places section"
+msgstr "Afficher les Emplacements"
+
+msgid "Display Bookmarks section"
+msgstr "Afficher les Signets"
+
+msgid "Display System section"
+msgstr "Afficher la section Système"
+
+msgid "Display Shutdown section"
+msgstr "Afficher la section Éteindre"
+
+msgid "Favorites has label"
+msgstr "Favoris avec texte"
+
+msgid "Favorites columns count"
+msgstr "Nombre de colonnes de Favoris"
+
+msgid "Favorites icons size (px)"
+msgstr "Taille des icones de Favoris (px)"
+
+msgid "Max bookmarks count (zero for show all)"
+msgstr "Nombre maximum de Signets (zéro pour tout afficher)"
+
+msgid "Category icons size (px)"
+msgstr "Taille des icones de catégories (px)"
+
+msgid "Left pane icons size (px)"
+msgstr "Taille des icones du panneau de gauche (px)"
+
+msgid "Applications icons size (px)"
+msgstr "Taille des icones des Applications"
+
+msgid "Main menu width (px)"
+msgstr "Largeur du menu principal (px)"
+
+msgid "Left pane width (px)"
+msgstr "Largeur du panneau de gauche (px)"
+
+msgid "Categories box width (px)"
+msgstr "Largeur du menu de catégories (px)"
+
+msgid "System Applications (Left pane)"
+msgstr "Applications système (Panneau de gauche)"
+
+msgid "Save"
+msgstr "Sauvegarder"
+
+msgid "Cancel"
+msgstr "Annuler"
+
+msgid "Button label"
+msgstr "Texte du bouton"
+
+msgid "Activites button rightmost"
+msgstr "Bouton Activités le plus à droite"
+
+msgid "\"Menu\" button with icon"
+msgstr "Bouton \"Menu\" avec icone"
+
+msgid "Yes"
+msgstr "Oui"
+
+msgid "No"
+msgstr "Non"
+
+msgid "Remove \"%s\" from favorites?"
+msgstr "Retirer \"%s\" des favoris?"
+
+msgid "Add \"%s\" to favorites?"
+msgstr "Ajouter \"%s\" aux favoris?"
+
+msgid "Apply"
+msgstr "Appliquer"
+
+msgid "Main"
+msgstr "Principale"
+
+msgid "Left pane"
+msgstr "Panneau de gauche"
+
+msgid "Right pane"
+msgstr "Panneau de droite"
+
+msgid "About"
+msgstr "Au sujet de"
+
+msgid "Hot corner"
+msgstr "Coin chaud"
+
+msgid "Icon name"
+msgstr ""
+
+msgid "Additionally"
+msgstr "Supplémentairement"
+
+msgid "Width of search entry (px)"
+msgstr "Largeur de la chaîne de Recherche"
+
+msgid "Display Search button"
+msgstr "Afficher le Rechercher bouton"
+
+msgid "Recent documents"
+msgstr "Des documents récents"
+
+msgid "Fixed height of menu"
+msgstr "Hauteur fixe de menu"
+
+msgid "AxeMenu in Hot corner"
+msgstr ""
+
+msgid "Select Category by click"
+msgstr "Sélectionnez une catégorie en cliquant sur"
+
+msgid "Display bottom pane"
+msgstr "Afficher la Panneau de inférieur"
+
+msgid "Categories box has scroll"
+msgstr "Zone de catégories a défilement"
+
+msgid "Display Left pane"
+msgstr "Afficher le Panneau de gauche"
+
+msgid "Search tool"
+msgstr "Outil de recherche"
+
+msgid "Reset to default"
+msgstr "Remise à défaut"
+
+msgid "Reset"
+msgstr "Remise"
+
+msgid "Main icons size (px)"
+msgstr "Taille de l'icône principale (px)"
+

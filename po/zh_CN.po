@@ -1,0 +1,204 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: axeMenu 0.8.2\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: dongfengweixiao <dongfengweixiao@gmail.com>\n"
+"Language-Team: \n"
+
+msgid "Applications"
+msgstr "应用程序"
+
+msgid "Favorites"
+msgstr "收藏夹"
+
+msgid "All applications"
+msgstr "所有应用程序"
+
+msgid "Type to search..."
+msgstr "键入搜索..."
+
+msgid "Menu"
+msgstr "菜单"
+
+msgid "Places"
+msgstr "位置"
+
+msgid "System"
+msgstr "系统"
+
+msgid "Power Off"
+msgstr "关机"
+
+msgid "Logout"
+msgstr "登出"
+
+msgid "Restart Shell"
+msgstr "重启 Gnome-shell"
+
+msgid "Computer"
+msgstr "计算机"
+
+msgid "Network"
+msgstr "网络"
+
+msgid "Search"
+msgstr "搜索"
+
+msgid "Bookmarks"
+msgstr "书签"
+
+msgid "Home Folder"
+msgstr "Home 目录"
+
+msgid "Desktop"
+msgstr "桌面"
+
+msgid "AxeMenu settings"
+msgstr "AxeMenu 设置"
+
+msgid "Start with favorites"
+msgstr "打开菜单时显示收藏夹内容"
+
+msgid "Display Activites button"
+msgstr "显示打开 Gnome-shell 缩略图按钮"
+
+msgid "Display Places section"
+msgstr "显示位置部分（计算机，Home 目录等）"
+
+msgid "Display Bookmarks section"
+msgstr "显示书签部分（文档，图片等文件夹）"
+
+msgid "Display System section"
+msgstr "显示系统部分（系统设置，终端等应用）"
+
+msgid "Display Shutdown section"
+msgstr "显示关机部分"
+
+msgid "Favorites has label"
+msgstr "收藏夹显示程序名称"
+
+msgid "Favorites columns count"
+msgstr "收藏夹显示列数"
+
+msgid "Favorites icons size (px)"
+msgstr "收藏夹图标尺寸（px）"
+
+msgid "Max bookmarks count (zero for show all)"
+msgstr "最多显示书签个数（为 0 全部显示）"
+
+msgid "Category icons size (px)"
+msgstr "类别图标的尺寸（px）"
+
+msgid "Left pane icons size (px)"
+msgstr "左窗格尺寸（px）"
+
+msgid "Applications icons size (px)"
+msgstr "应用程序图标尺寸（px）"
+
+msgid "Main box width (px)"
+msgstr "主窗格宽度（px）"
+
+msgid "Left pane width (px)"
+msgstr "左窗格宽度（px）"
+
+msgid "Categories box width (px)"
+msgstr "类别框宽度（px）"
+
+msgid "System Applications (Left pane)"
+msgstr "系统程序（左窗格）"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "Button label"
+msgstr "主按钮显示文字"
+
+msgid "Activites button rightmost"
+msgstr "活动按钮最右显示"
+
+msgid "\"Menu\" button with icon"
+msgstr "主按钮上显示图标"
+
+msgid "Yes"
+msgstr "是"
+
+msgid "No"
+msgstr "否"
+
+msgid "Remove \"%s\" from favorites?"
+msgstr "将 \"%s\" 从最爱中移除？"
+
+msgid "Add \"%s\" to favorites?"
+msgstr "添加 \"%s\" 到最爱？"
+
+msgid "Apply"
+msgstr "Apply"
+
+msgid "Main"
+msgstr "主菜单"
+
+msgid "Left pane"
+msgstr "左窗格"
+
+msgid "Right pane"
+msgstr "右窗格"
+
+msgid "About"
+msgstr "关于"
+
+msgid "Hot corner"
+msgstr "鼠标移动到左上角显示 AxeMenu 菜单"
+
+msgid "Icon name"
+msgstr "图标名称（默认为 start-here）"
+
+msgid "Additionally"
+msgstr "附加"
+
+msgid "Width of search entry (px)"
+msgstr "搜索输入框的宽度 （px）"
+
+msgid "Display Search button"
+msgstr "显示搜索按钮"
+
+msgid "Recent documents"
+msgstr "最近使用的文档"
+
+msgid "Fixed height of menu"
+msgstr "菜单固定高度"
+
+msgid "AxeMenu in Hot corner"
+msgstr "缩略图模式再次戳左上角弹出 AxeMenu 菜单（开启上一选项）"
+
+msgid "Select Category by click"
+msgstr "通过单击选择类别"
+
+msgid "Display bottom pane"
+msgstr "显示 AxeMenu 设置按钮"
+
+msgid "Categories box has scroll"
+msgstr "Categories box has scroll"
+
+msgid "Display Left pane"
+msgstr "显示菜单左半栏"
+
+msgid "Search tool"
+msgstr "搜索工具"
+
+msgid "Reset to default"
+msgstr "重置为默认值"
+
+msgid "Reset"
+msgstr "重置"
+
+msgid "Main icons size (px)"
+msgstr "主按钮大小 （px）"
+

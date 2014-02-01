@@ -1,0 +1,207 @@
+# Juhani Numminen <juhaninumminen0@gmail.com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: axeMenu 0.8.2\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: Juhani Numminen <juhaninumminen0@gmail.com>\n"
+"Language-Team: Finnish <translation-team-fi@lists.sourceforge.net>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"PO-Revision-Date: 2012-11-25 12:30+0200\n"
+
+msgid "Applications"
+msgstr "Sovellukset"
+
+msgid "Favorites"
+msgstr "Suosikit"
+
+msgid "All applications"
+msgstr "Kaikki sovellukset"
+
+msgid "Type to search..."
+msgstr "Kirjoita hakeaksesi…"
+
+msgid "Menu"
+msgstr "Valikko"
+
+msgid "Places"
+msgstr "Sijainnit"
+
+msgid "System"
+msgstr "Järjestelmä"
+
+msgid "Power Off"
+msgstr "Sammuta"
+
+msgid "Logout"
+msgstr "Kirjaudu ulos"
+
+msgid "Restart Shell"
+msgstr "Käynnistä Shell uudelleen"
+
+msgid "Computer"
+msgstr "Tietokone"
+
+msgid "Network"
+msgstr "Verkko"
+
+msgid "Search"
+msgstr "Hae"
+
+msgid "Bookmarks"
+msgstr "Kirjanmerkit"
+
+msgid "Home Folder"
+msgstr "Kotikansio"
+
+msgid "Desktop"
+msgstr "Työpöytä"
+
+msgid "AxeMenu settings"
+msgstr "AxeMenun asetukset"
+
+msgid "Start with favorites"
+msgstr "Näytä oletuksena suosikit"
+
+msgid "Display Activites button"
+msgstr "Näytä Toiminnot-painike"
+
+msgid "Display Places section"
+msgstr "Näytä Sijainnit-osio"
+
+msgid "Display Bookmarks section"
+msgstr "Näytä Kirjanmerkit-osio"
+
+msgid "Display System section"
+msgstr "Näytä Järjestelmä-osio"
+
+msgid "Display Shutdown section"
+msgstr "Näytä Sammuta-osio"
+
+msgid "Favorites has label"
+msgstr "Suosikeilla on nimiöt"
+
+msgid "Favorites columns count"
+msgstr "Suosikkien sarakkeiden lukumäärä"
+
+msgid "Favorites icons size (px)"
+msgstr "Suosikkien kuvakkeiden koko (px)"
+
+msgid "Max bookmarks count (zero for show all)"
+msgstr "Kirjanmerkkejä enintään (nolla näyttää kaikki)"
+
+msgid "Category icons size (px)"
+msgstr "Luokkien kuvakkeiden koko (px)"
+
+msgid "Left pane icons size (px)"
+msgstr "Vasemman ruudun kuvakkeiden koko (px)"
+
+msgid "Applications icons size (px)"
+msgstr "Sovellusten kuvakkeiden koko (px)"
+
+msgid "Main box width (px)"
+msgstr "Päälaatikon leveys (px)"
+
+msgid "Left pane width (px)"
+msgstr "Vasemman ruudun leveys (px)"
+
+msgid "Categories box width (px)"
+msgstr "Luokkien laatikon leveys (px)"
+
+msgid "System Applications (Left pane)"
+msgstr "Järjestelmäsovellukset (vasen ruutu)"
+
+msgid "Save"
+msgstr "Tallenna"
+
+msgid "Cancel"
+msgstr "Peruuta"
+
+msgid "Button label"
+msgstr "Painikkeen teksti"
+
+msgid "Activites button rightmost"
+msgstr "Toiminnot-painike oikeassa reunassa"
+
+msgid "\"Menu\" button with icon"
+msgstr "Kuvake Valikko-painikkeessa"
+
+msgid "Yes"
+msgstr "Kyllä"
+
+msgid "No"
+msgstr "Ei"
+
+msgid "Remove \"%s\" from favorites?"
+msgstr "Poistetaanko ”%s” suosikeista?"
+
+msgid "Add \"%s\" to favorites?"
+msgstr "Lisätäänkö ”%s” suosikkeihin?"
+
+msgid "Apply"
+msgstr "Käytä"
+
+msgid "Main"
+msgstr "Yleiset"
+
+msgid "Left pane"
+msgstr "Vasen ruutu"
+
+msgid "Right pane"
+msgstr "Oikea ruutu"
+
+msgid "About"
+msgstr "Tietoja"
+
+msgid "Hot corner"
+msgstr "Kuuma nurkka"
+
+msgid "Icon name"
+msgstr "Kuvakkeen nimi"
+
+msgid "Additionally"
+msgstr "Lisäasetukset"
+
+msgid "Width of search entry (px)"
+msgstr "Hakupalkin leveys (px)"
+
+msgid "Display Search button"
+msgstr "Näytä Hae-painike"
+
+msgid "Recent documents"
+msgstr "Viimeisimmät asiakirjat"
+
+msgid "Fixed height of menu"
+msgstr "Valikon korkeus on kiinteä"
+
+msgid "AxeMenu in Hot corner"
+msgstr "AxeMenu kuumassa kulmassa"
+
+msgid "Select Category by click"
+msgstr "Valitse luokka napsauttamalla"
+
+msgid "Display bottom pane"
+msgstr "Näytä alaruutu"
+
+msgid "Categories box has scroll"
+msgstr "Luokkien laatikossa on vierityspalkki"
+
+msgid "Display Left pane"
+msgstr "Näytä vasen ruutu"
+
+msgid "Search tool"
+msgstr "Hakutyökalu"
+
+msgid "Reset to default"
+msgstr "Palauta oletukset"
+
+msgid "Reset"
+msgstr "Palauta"
+
+msgid "Main icons size (px)"
+msgstr "Pääkuvakkeiden koko (px)"
+
+msgid "Main menu width (px)"
+msgstr "Päävalikon leveys (px)"

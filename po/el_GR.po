@@ -1,0 +1,204 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: axeMenu 0.8.2\n"
+"Language: el_GR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Panagiotis Koulidis <giotiskrometis@gmail.com>\n"
+"Language-Team: \n"
+
+msgid "Applications"
+msgstr "Εφαρμογές"
+
+msgid "Favorites"
+msgstr "Αγαπημένα"
+
+msgid "All applications"
+msgstr "Όλες οι εφαρμογές"
+
+msgid "Type to search..."
+msgstr "Πληκτρολογήστε για αναζήτηση ..."
+
+msgid "Menu"
+msgstr "Μενού"
+
+msgid "Places"
+msgstr "Τοποθεσίες"
+
+msgid "System"
+msgstr "Σύστημα"
+
+msgid "Power Off"
+msgstr "Απενεργοποίηση"
+
+msgid "Logout"
+msgstr "Αποσύνδεση"
+
+msgid "Restart Shell"
+msgstr "Επανεκκίνηση του Shell"
+
+msgid "Computer"
+msgstr "Υπολογιστής"
+
+msgid "Network"
+msgstr "Δίκτυο"
+
+msgid "Search"
+msgstr "Αναζήτηση"
+
+msgid "Bookmarks"
+msgstr "Σελιδοδείκτες"
+
+msgid "Home Folder"
+msgstr "Αρχικός φάκελος"
+
+msgid "Desktop"
+msgstr "Επιφάνεια εργασίας"
+
+msgid "AxeMenu settings"
+msgstr "Ρυθμίσεις AxeMenu"
+
+msgid "Start with favorites"
+msgstr "Έναρξη με τα αγαπημένα"
+
+msgid "Display Activites button"
+msgstr "Εμφάνιση πλήκτρου ενεργειών"
+
+msgid "Display Places section"
+msgstr "Εμφάνιση ενότητας τοποθεσιών"
+
+msgid "Display Bookmarks section"
+msgstr "Εμφάνιση ενότητας σελιδοδεικτών"
+
+msgid "Display System section"
+msgstr "Εμφάνιση ενότητας συστήματος"
+
+msgid "Display Shutdown section"
+msgstr "Εμφάνιση ενότητας τερματισμού"
+
+msgid "Favorites has label"
+msgstr "Τα αγαπημένα έχουν ετικέτα"
+
+msgid "Favorites columns count"
+msgstr "Υπολογισμός στηλών αγαπημένων"
+
+msgid "Favorites icons size (px)"
+msgstr "Μέγεθος εικονιδίων αγαπημένων (px)"
+
+msgid "Max bookmarks count (zero for show all)"
+msgstr "Μέγιστος υπολογισμός σελιδοδεικτών (μηδέν για εμφάνιση όλων)"
+
+msgid "Category icons size (px)"
+msgstr "Μέγεθος εικονιδίων κατηγορίας (px)"
+
+msgid "Left pane icons size (px)"
+msgstr "Μέγεθος εικονίδιων αριστερού τμήματος παραθύρου (px)"
+
+msgid "Applications icons size (px)"
+msgstr "Μέγεθος εικονιδίων εφαρμογών (px)"
+
+msgid "Main box width (px)"
+msgstr "Αρχικό πλάτος πλαισίου (px)"
+
+msgid "Left pane width (px)"
+msgstr "Πλάτος αριστερού τμήματος παραθύρου (px)"
+
+msgid "Categories box width (px)"
+msgstr "Πλάτος πλαισίου κατηγοριών (px)"
+
+msgid "System Applications (Left pane)"
+msgstr "Εφαρμογές συστήματος (αριστερό τμήμα παραθύρου)"
+
+msgid "Save"
+msgstr "Αποθήκευση"
+
+msgid "Cancel"
+msgstr "Άκυρο"
+
+msgid "Button label"
+msgstr "Ετικέτα πλήκτρου"
+
+msgid "Activites button rightmost"
+msgstr "Ενέργειες δεξιότερου πλήκτρου"
+
+msgid "\"Menu\" button with icon"
+msgstr "Πλήκτρο \"Μενού\" με εικονίδιο"
+
+msgid "Yes"
+msgstr "Ναι"
+
+msgid "No"
+msgstr "Όχι"
+
+msgid "Remove \"%s\" from favorites?"
+msgstr "Αφαίρεση \"%s\" από τα αγαπημένα;"
+
+msgid "Add \"%s\" to favorites?"
+msgstr "Προσθήκη \"%s\" στα αγαπημένα;"
+
+msgid "Apply"
+msgstr "Εφαρμογή"
+
+msgid "Main"
+msgstr "Αρχικό"
+
+msgid "Left pane"
+msgstr "Αριστερό τμήμα παραθύρου"
+
+msgid "Right pane"
+msgstr "Δεξιό τμήμα παραθύρου"
+
+msgid "About"
+msgstr "Περί"
+
+msgid "Hot corner"
+msgstr "Hot corner"
+
+msgid "Icon name"
+msgstr "Όνομα εικονιδίου"
+
+msgid "Additionally"
+msgstr "Επιπρόσθετα"
+
+msgid "Width of search entry (px)"
+msgstr "Πλάτος θέσης αναζήτησης (px)"
+
+msgid "Display Search button"
+msgstr "Εμφάνιση πλήκτρου αναζήτησης"
+
+msgid "Recent documents"
+msgstr "Πρόσφατα έγγραφα"
+
+msgid "Fixed height of menu"
+msgstr "Σταθερό ύψος του μενού"
+
+msgid "AxeMenu in Hot corner"
+msgstr "AxeMenu in Hot corner"
+
+msgid "Select Category by click"
+msgstr "Επιλογή κατηγορίας με κλικ"
+
+msgid "Display bottom pane"
+msgstr "Εμφάνιση κάτω τμήματος παραθύρου"
+
+msgid "Categories box has scroll"
+msgstr "Πλαίσιο κατηγοριών με κύλιση"
+
+msgid "Display Left pane"
+msgstr "Εμφάνιση αριστερού τμήματος παραθύρου"
+
+msgid "Search tool"
+msgstr "Εργαλείο αναζήτησης"
+
+msgid "Reset to default"
+msgstr "Επαναφορά προεπιλογών"
+
+msgid "Reset"
+msgstr "Επαναφορά"
+
+msgid "Main icons size (px)"
+msgstr "Αρχικό μέγεθος εικονιδίων (px)"
+

@@ -1,0 +1,28 @@
+<b>Axe Menu extension for Gnome Shell 3.2, 3.4, 3.5.2</b>
+(Based on [url=http://packages.linuxmint.com/list.php?release=Lisa]mgse-menu_1.1.6[/url])
+
+Version: <b>@version@</b> (extensions.gnome.org: <b>@e.g.o-version@</b>)
+License: <b>GPL v2+</b>
+Homepage:  [url=http://k210.org/axemenu/]http://k210.org/axemenu/[/url]
+Developer: easy2002  <[url=mailto:e2002@bk.ru]e2002@bk.ru[/url]>
+
+<b>Thanks for translations</b>:
+Italian				[url=http://about.me/johnnymnemonic/]Giuseppe Palmiotto[/url]
+French				[url=https://extensions.gnome.org/accounts/profile/coudu].:: CouDu ::.[/url]
+Portuguese (Brazil)	[url=https://extensions.gnome.org/accounts/profile/brunces]Bruno Magalhães[/url]
+German				Rüdiger
+Arabic				Hannysabbagh
+Turkish				Eren Doğuş Ateş
+Spanish				Antonio Trujillo
+Chinese				杜宏羽
+Hebrew				Ami Geva
+Bahasa Indonesia		Sahri Riza Umami
+Japanese			Nishio Futoshi
+Polish				Mateusz Szostak
+Greek				giotis
+Catalan				David Soms
+Dutch				Rob van den Berg
+Czech				Pavel Sieder
+Finnish				Juhani Numminen
+
+[url=mailto:e2002@bk.ru?subject=AxeMenu%20translation]Send me your![/url]

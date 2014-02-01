@@ -1,0 +1,205 @@
+# hannysabbagh <hannysabbagh@hotmail.com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: axeMenu 0.8.2\n"
+"PO-Revision-Date: 2012-06-10 03:30+0300\n"
+"Last-Translator: hannysabbagh <hannysabbagh@hotmail.com>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
+
+msgid "Applications"
+msgstr "التطبيقات"
+
+msgid "Favorites"
+msgstr "المفضلات"
+
+msgid "All applications"
+msgstr "كل التطبيقات"
+
+msgid "Type to search..."
+msgstr "اكتب للبحث..."
+
+msgid "Menu"
+msgstr "القائمة"
+
+msgid "Places"
+msgstr "الأماكن"
+
+msgid "System"
+msgstr "النظام"
+
+msgid "Power Off"
+msgstr "إيقاف التشغيل"
+
+msgid "Logout"
+msgstr "تسجيل الخروج"
+
+msgid "Restart Shell"
+msgstr "إعادة تشغيل الصدفة"
+
+msgid "Computer"
+msgstr "الحاسوب"
+
+msgid "Network"
+msgstr "الشبكة"
+
+msgid "Search"
+msgstr "البحث"
+
+msgid "Bookmarks"
+msgstr "العلامات"
+
+msgid "Home Folder"
+msgstr "مجلد المنزل"
+
+msgid "Desktop"
+msgstr "سطح المكتب"
+
+msgid "AxeMenu settings"
+msgstr "إعدادات AxeMenu"
+
+msgid "Start with favorites"
+msgstr "البدأ بالمفضلات"
+
+msgid "Display Activites button"
+msgstr "عرض زر الأنشطة"
+
+msgid "Display Places section"
+msgstr "عرض قسم الأماكن"
+
+msgid "Display Bookmarks section"
+msgstr "عرض قسم العلامات"
+
+msgid "Display System section"
+msgstr "عرض قسم النظام"
+
+msgid "Display Shutdown section"
+msgstr "عرض قسم إيقاف التشغيل"
+
+msgid "Favorites has label"
+msgstr "المفضلات لها نصوص"
+
+msgid "Favorites columns count"
+msgstr "عدّ أعمدة المفضلات"
+
+msgid "Favorites icons size (px)"
+msgstr "حجم أيقونات المفضلات (px)"
+
+msgid "Max bookmarks count (zero for show all)"
+msgstr "أكبر عدد للمفضلات (صفر لعرض الكل)"
+
+msgid "Category icons size (px)"
+msgstr "حجم أيقونات التصنيفات (px)"
+
+msgid "Left pane icons size (px)"
+msgstr "حجم أيقونات الجزء الأيسر (px)"
+
+msgid "Applications icons size (px)"
+msgstr "حجم أيقونات التطبيقات (px)"
+
+msgid "Main box width (px)"
+msgstr "عرض صندوق الرئيسية (px)"
+
+msgid "Left pane width (px)"
+msgstr "عرض الجزء الأيسر (px)"
+
+msgid "Categories box width (px)"
+msgstr "عرض صندوق التصنيفات"
+
+msgid "System Applications (Left pane)"
+msgstr "تطبيقات النظام (Left pane)"
+
+msgid "Save"
+msgstr "حفظ"
+
+msgid "Cancel"
+msgstr "الغا"
+
+msgid "Button label"
+msgstr "نص الزر"
+
+msgid "Activites button rightmost"
+msgstr "زر الأنشطة أقصى اليمين"
+
+msgid "\"Menu\" button with icon"
+msgstr "زر \"القائمة\" مع أيقونة"
+
+msgid "Yes"
+msgstr "نعم"
+
+msgid "No"
+msgstr "لا"
+
+msgid "Remove \"%s\" from favorites?"
+msgstr "حذف \"%s\" من المفضلات؟"
+
+msgid "Add \"%s\" to favorites?"
+msgstr "إضافة \"%s\" إلى المفضلات؟"
+
+msgid "Apply"
+msgstr "تطبيق"
+
+msgid "Main"
+msgstr "الرئيسية"
+
+msgid "Left pane"
+msgstr "الجزء الأيسر"
+
+msgid "Right pane"
+msgstr "الجزء الأيمن"
+
+msgid "About"
+msgstr "حول"
+
+msgid "Hot corner"
+msgstr "الزاوية اللامعة"
+
+msgid "Icon name"
+msgstr "اسم الأيقونة"
+
+msgid "Additionally"
+msgstr "تقليدياً"
+
+msgid "Width of search entry (px)"
+msgstr "عرض مساحة البحث (px)"
+
+msgid "Display Search button"
+msgstr "عرض زر البحث"
+
+msgid "Recent documents"
+msgstr "المستندات الأخيرة"
+
+msgid "Fixed height of menu"
+msgstr "الارتفاع المٌصلح للقائمة"
+
+msgid "AxeMenu in Hot corner"
+msgstr "قائمة AxeMenu بالزاوية اللامعة"
+
+msgid "Select Category by click"
+msgstr "اختر تصنيفاً بالضغط عليه"
+
+msgid "Display bottom pane"
+msgstr "عرض الجزء السفلي"
+
+msgid "Categories box has scroll"
+msgstr "صندوق التصنيفات له شريط تمرير"
+
+msgid "Display Left pane"
+msgstr "عرض الجزء الأيسر"
+
+msgid "Search tool"
+msgstr "أداة البحث"
+
+msgid "Reset to default"
+msgstr "التراجع إلى الافتراضي"
+
+msgid "Reset"
+msgstr "تراجع"
+
+msgid "Main icons size (px)"
+msgstr "حجم الأيقونات الرئيسي (px)"
+

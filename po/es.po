@@ -1,0 +1,203 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: axeMenu 0.8.2\n"
+"Language: en_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Applications"
+msgstr "Aplicaciones"
+
+msgid "Favorites"
+msgstr "Favoritos"
+
+msgid "All applications"
+msgstr "Aplicaciones"
+
+msgid "Type to search..."
+msgstr "Teclee para buscar"
+
+msgid "Menu"
+msgstr "Menú"
+
+msgid "Places"
+msgstr "Lugares"
+
+msgid "System"
+msgstr "Sistema"
+
+msgid "Power Off"
+msgstr "Apagar"
+
+msgid "Logout"
+msgstr "Salir"
+
+msgid "Restart Shell"
+msgstr "Reiniciar Shell"
+
+msgid "Computer"
+msgstr "Equipo"
+
+msgid "Network"
+msgstr "Red"
+
+msgid "Search"
+msgstr "Buscar"
+
+msgid "Bookmarks"
+msgstr "Marcadores"
+
+msgid "Home Folder"
+msgstr "Carpeta personal"
+
+msgid "Desktop"
+msgstr "Escritorio"
+
+msgid "AxeMenu settings"
+msgstr "Ajustes de AxeMenu"
+
+msgid "Start with favorites"
+msgstr "Iniciar con favoritos"
+
+msgid "Display Activites button"
+msgstr "Mostrar botón de actividades"
+
+msgid "Display Places section"
+msgstr "Mostrar sección Lugares"
+
+msgid "Display Bookmarks section"
+msgstr "Mostrar sección Marcadores"
+
+msgid "Display System section"
+msgstr "Mostrar sección Sistema"
+
+msgid "Display Shutdown section"
+msgstr "Mostrar sección Apagar"
+
+msgid "Favorites has label"
+msgstr "Favoritos tiene etiqueta"
+
+msgid "Favorites columns count"
+msgstr "Columnas en Favoritos"
+
+msgid "Favorites icons size (px)"
+msgstr "Tamaño de icono en Favoritos (px)"
+
+msgid "Max bookmarks count (zero for show all)"
+msgstr "Número máx. de marcadores (cero para todos)"
+
+msgid "Category icons size (px)"
+msgstr "Tamaño de icono de Categorías (px)"
+
+msgid "Left pane icons size (px)"
+msgstr "Tamaño de icono en panel izquierdo (px)"
+
+msgid "Applications icons size (px)"
+msgstr "Tamaño de iconos de aplicaciones (px)"
+
+msgid "Main box width (px)"
+msgstr "Ancho del cuadro principal (px)"
+
+msgid "Left pane width (px)"
+msgstr "Ancho del panel izquierdo (px)"
+
+msgid "Categories box width (px)"
+msgstr "Ancho del cuadro de categorías (px)"
+
+msgid "System Applications (Left pane)"
+msgstr "Aplicaciones del sistema (panel izquierdo)"
+
+msgid "Save"
+msgstr "Guardar"
+
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgid "Button label"
+msgstr "Etiqueta del botón"
+
+msgid "Activites button rightmost"
+msgstr "Boton Actividades en el borde izquierdo"
+
+msgid "\"Menu\" button with icon"
+msgstr "Botón \"Menú\" con icono"
+
+msgid "Yes"
+msgstr "Sí"
+
+msgid "No"
+msgstr "No"
+
+msgid "Remove \"%s\" from favorites?"
+msgstr "¿Quitar \"%s\" de favoritos"
+
+msgid "Add \"%s\" to favorites?"
+msgstr "¿Añadir \"%s\" a favoritos?"
+
+msgid "Apply"
+msgstr "Aplicar"
+
+msgid "Main"
+msgstr "Principal"
+
+msgid "Left pane"
+msgstr "Panel izquierdo"
+
+msgid "Right pane"
+msgstr "Panel derecho"
+
+msgid "About"
+msgstr "Acerca de"
+
+msgid "Hot corner"
+msgstr "Hot corner"
+
+msgid "Icon name"
+msgstr "Nombre de icono"
+
+msgid "Additionally"
+msgstr "Otros ajustes"
+
+msgid "Width of search entry (px)"
+msgstr "Ancho del cuadro de búsqueda (px)"
+
+msgid "Display Search button"
+msgstr "Mostrar botón de búsqueda"
+
+msgid "Recent documents"
+msgstr "Documentos recientes"
+
+msgid "Fixed height of menu"
+msgstr "Ancho fijo del menú"
+
+msgid "AxeMenu in Hot corner"
+msgstr "Axemenu en Hot corner"
+
+msgid "Select Category by click"
+msgstr "Seleccionar Categoría con un clic"
+
+msgid "Display bottom pane"
+msgstr "Mostrar panel inferior"
+
+msgid "Categories box has scroll"
+msgstr "Cuadro de categorías con desplazamiento"
+
+msgid "Display Left pane"
+msgstr "Mostrar panel izquierdo"
+
+msgid "Search tool"
+msgstr "Herramienta de búsqueda"
+
+msgid "Reset to default"
+msgstr "Restablecer ajustes por omisión"
+
+msgid "Reset"
+msgstr "Restablecer"
+
+msgid "Main icons size (px)"
+msgstr "Tamaño de iconos principales (px)"
+
+msgid "Main menu width (px)"
+msgstr "Ancho del menu principal (px)"

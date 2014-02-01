@@ -1,0 +1,201 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: axeMenu 0.8.2\n"
+"Language: id_ID\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Applications"
+msgstr "Aplikasi"
+
+msgid "Favorites"
+msgstr "Favorit"
+
+msgid "All applications"
+msgstr "Semua aplikasi"
+
+msgid "Type to search..."
+msgstr "Ketik untuk mencari"
+
+msgid "Menu"
+msgstr "Menu"
+
+msgid "Places"
+msgstr "Tempat"
+
+msgid "System"
+msgstr "Sistem"
+
+msgid "Power Off"
+msgstr "Matikan"
+
+msgid "Logout"
+msgstr "Keluar"
+
+msgid "Restart Shell"
+msgstr "Hidupkan ulang Shell"
+
+msgid "Computer"
+msgstr "Komputer"
+
+msgid "Network"
+msgstr "Jaringan"
+
+msgid "Search"
+msgstr "Pencarian"
+
+msgid "Bookmarks"
+msgstr "Penanda"
+
+msgid "Home Folder"
+msgstr "Map Home"
+
+msgid "Desktop"
+msgstr "Desktop"
+
+msgid "AxeMenu settings"
+msgstr "Pengaturan AxeMenu"
+
+msgid "Start with favorites"
+msgstr "Mulai dengan favorit"
+
+msgid "Display Activites button"
+msgstr "Tampilkan tombol Activities"
+
+msgid "Display Places section"
+msgstr "Tampilkan bagian Tempat"
+
+msgid "Display Bookmarks section"
+msgstr "Tampilkan bagian Penanda"
+
+msgid "Display System section"
+msgstr "Tampilkan bagian Sistem"
+
+msgid "Display Shutdown section"
+msgstr "Tampilkan bagian Matikan"
+
+msgid "Favorites has label"
+msgstr "Favorit memiliki label"
+
+msgid "Favorites columns count"
+msgstr "Jumlah kolom Favorit"
+
+msgid "Favorites icons size (px)"
+msgstr "Ukuran ikon Favorit (px)"
+
+msgid "Max bookmarks count (zero for show all)"
+msgstr "Jumlah maksimal Penanda (0 untuk menampilkan semua)"
+
+msgid "Category icons size (px)"
+msgstr "Ukuran ikon Kategori (px)"
+
+msgid "Left pane icons size (px)"
+msgstr "Ukuran ikon panel kiri (px)"
+
+msgid "Applications icons size (px)"
+msgstr "Ukuran ikon Aplikasi (px)"
+
+msgid "Main box width (px)"
+msgstr "Lebar kotak utama (px)"
+
+msgid "Left pane width (px)"
+msgstr "Lebar panel kiri (px)"
+
+msgid "Categories box width (px)"
+msgstr "Lebar kotak Kategori (px)"
+
+msgid "System Applications (Left pane)"
+msgstr "Aplikasi Sistem (panel kiri)"
+
+msgid "Save"
+msgstr "Simpan"
+
+msgid "Cancel"
+msgstr "Batal"
+
+msgid "Button label"
+msgstr "Label tombol"
+
+msgid "Activites button rightmost"
+msgstr "Tombol Activities berada paling kanan"
+
+msgid "\"Menu\" button with icon"
+msgstr "Tombol \"Menu\" memiliki ikon"
+
+msgid "Yes"
+msgstr "Ya"
+
+msgid "No"
+msgstr "Tidak"
+
+msgid "Remove \"%s\" from favorites?"
+msgstr "Buang \"%s\" dari favorit?"
+
+msgid "Add \"%s\" to favorites?"
+msgstr "Tambahkan \"%s\" ke favorit?"
+
+msgid "Apply"
+msgstr "Terapkan"
+
+msgid "Main"
+msgstr "Utama"
+
+msgid "Left pane"
+msgstr "Panel kiri"
+
+msgid "Right pane"
+msgstr "Panel kanan"
+
+msgid "About"
+msgstr "Tentang"
+
+msgid "Hot corner"
+msgstr "Hot corner"
+
+msgid "Icon name"
+msgstr "Nama ikon"
+
+msgid "Additionally"
+msgstr "Tambahan"
+
+msgid "Width of search entry (px)"
+msgstr "Lebar kolom pencarian (px)"
+
+msgid "Display Search button"
+msgstr "Tampilkan tombol Pencarian"
+
+msgid "Recent documents"
+msgstr "Dokumen terkini"
+
+msgid "Fixed height of menu"
+msgstr "Tetapkan tinggi menu"
+
+msgid "AxeMenu in Hot corner"
+msgstr "AxeMenu pada Hot corner"
+
+msgid "Select Category by click"
+msgstr "Pilih Kategori dengan klik"
+
+msgid "Display bottom pane"
+msgstr "Tampilkan panel dasar"
+
+msgid "Categories box has scroll"
+msgstr "Kotak Kategori memiliki penggulung"
+
+msgid "Display Left pane"
+msgstr "Tampilkan panel kiri"
+
+msgid "Search tool"
+msgstr "Perkakas Pencarian"
+
+msgid "Reset to default"
+msgstr "Kembalikan ke asali"
+
+msgid "Reset"
+msgstr "Reset"
+
+msgid "Main icons size (px)"
+msgstr "Ukuran ikon utama (px)"
+

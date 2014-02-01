@@ -1,0 +1,201 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: axeMenu 0.8.2\n"
+"Language: tr_TR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Applications"
+msgstr "Uygulamalar"
+
+msgid "Favorites"
+msgstr "Begenilenler"
+
+msgid "All applications"
+msgstr "Bütün uygulamalar"
+
+msgid "Type to search..."
+msgstr "Aramak için yazın..."
+
+msgid "Menu"
+msgstr "Menü"
+
+msgid "Places"
+msgstr "Yerler"
+
+msgid "System"
+msgstr "Sistem"
+
+msgid "Power Off"
+msgstr "Kapat"
+
+msgid "Logout"
+msgstr "Çıkış"
+
+msgid "Restart Shell"
+msgstr "Shell'i Yeniden Başlat"
+
+msgid "Computer"
+msgstr "Bilgisayar"
+
+msgid "Network"
+msgstr "Ağ"
+
+msgid "Search"
+msgstr "Ara"
+
+msgid "Bookmarks"
+msgstr "Yer İmleri"
+
+msgid "Home Folder"
+msgstr "Başlangıç"
+
+msgid "Desktop"
+msgstr "Masaüstü"
+
+msgid "AxeMenu settings"
+msgstr "AxeMenü Ayarları"
+
+msgid "Start with favorites"
+msgstr "Beğenilenler ile başla"
+
+msgid "Display Activites button"
+msgstr "Etkinlikler düğmesini göster"
+
+msgid "Display Places section"
+msgstr "Yerler bölümünü göster"
+
+msgid "Display Bookmarks section"
+msgstr "Yer İmleri bölümünü göster"
+
+msgid "Display System section"
+msgstr "Sistem bölümünü göster"
+
+msgid "Display Shutdown section"
+msgstr "Kapatma bölümünü göster"
+
+msgid "Favorites has label"
+msgstr "Beğenilenlere etiket ekle"
+
+msgid "Favorites columns count"
+msgstr "Beğenilenler sütun sayısı"
+
+msgid "Favorites icons size (px)"
+msgstr "Beğenilenler simge boyutu (piksel)"
+
+msgid "Max bookmarks count (zero for show all)"
+msgstr "En fazla yer imi sayısı (hepsini göstermek için sıfır)"
+
+msgid "Category icons size (px)"
+msgstr "Kategori simge boyutu (piksel)"
+
+msgid "Left pane icons size (px)"
+msgstr "Sol çerçeve simge boyutu (piksel)"
+
+msgid "Applications icons size (px)"
+msgstr "Uygulamalar simge boyutu (piksel)"
+
+msgid "Main box width (px)"
+msgstr "Ana kutu genişliği (piksel)"
+
+msgid "Left pane width (px)"
+msgstr "Sol çerçeve genişliği (piksel)"
+
+msgid "Categories box width (px)"
+msgstr "Kategoriler kutu genişliği (piksel)"
+
+msgid "System Applications (Left pane)"
+msgstr "Sistem Uygulamaları (Sol çerçeve)"
+
+msgid "Save"
+msgstr "Kaydet"
+
+msgid "Cancel"
+msgstr "İptal"
+
+msgid "Button label"
+msgstr "Düğme etiketi"
+
+msgid "Activites button rightmost"
+msgstr "Etkinlikler düğmesi en sağda"
+
+msgid "\"Menu\" button with icon"
+msgstr "\"Menu\" simgeli düğme"
+
+msgid "Yes"
+msgstr "Evet"
+
+msgid "No"
+msgstr "Hayır"
+
+msgid "Remove \"%s\" from favorites?"
+msgstr "\"%s\"'i beğenilenlerden kaldırmak istiyor musunuz ?"
+
+msgid "Add \"%s\" to favorites?"
+msgstr "\"%s\"'i beğenilenlere eklemek istiyor musunuz ?"
+
+msgid "Apply"
+msgstr "Uygula"
+
+msgid "Main"
+msgstr "Ana"
+
+msgid "Left pane"
+msgstr "Sol çerçeve"
+
+msgid "Right pane"
+msgstr "Sağ çerçeve"
+
+msgid "About"
+msgstr "Hakkında"
+
+msgid "Hot corner"
+msgstr "Hot corner"
+
+msgid "Icon name"
+msgstr "Simge adı"
+
+msgid "Additionally"
+msgstr "Daha fazla"
+
+msgid "Width of search entry (px)"
+msgstr "Arama girdisinin genişliği (piksel)"
+
+msgid "Display Search button"
+msgstr "Arama düğmesini göster"
+
+msgid "Recent documents"
+msgstr "En son açılan belgeler"
+
+msgid "Fixed height of menu"
+msgstr "Menünün sabit yüksekliği"
+
+msgid "AxeMenu in Hot corner"
+msgstr "AxeMenu Hot cornerda"
+
+msgid "Select Category by click"
+msgstr "Kategoriyi tıklayarak seç"
+
+msgid "Display bottom pane"
+msgstr "Alt çerçeveyi göster"
+
+msgid "Categories box has scroll"
+msgstr "Kategori kutusu kaydırılabilir"
+
+msgid "Display Left pane"
+msgstr "Sol çerçeveyi göster"
+
+msgid "Search tool"
+msgstr "Arama aracı"
+
+msgid "Reset to default"
+msgstr "Varsayılana dön"
+
+msgid "Reset"
+msgstr "Başa dön"
+
+msgid "Main icons size (px)"
+msgstr "Ana simgeler boyutu (piksel)"
+

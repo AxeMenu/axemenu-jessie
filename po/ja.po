@@ -1,0 +1,113 @@
+# Japanese translations for PACKAGE package
+# PACKAGE パッケージに対する英訳.
+# Copyright (C) 2012 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Nishio Futoshi <fut_nis@d3.dion.ne.jp>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: axeMenu 0.8.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-06-30 23:24+0900\n"
+"PO-Revision-Date: 2012-06-30 23:24+0900\n"
+"Last-Translator: Nishio Futoshi <fut_nis@d3.dion.ne.jp>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: extension.js:88
+#, c-format
+msgid "Remove \"%s\" from favorites?"
+msgstr "\"%s\"をお気に入りから削除しますか？"
+
+#: extension.js:88
+#, c-format
+msgid "Add \"%s\" to favorites?"
+msgstr "\"%s\"をお気に入りに追加しますか？"
+
+#: extension.js:91
+msgid "Yes"
+msgstr "はい"
+
+#: extension.js:91
+msgid "No"
+msgstr "いいえ"
+
+#: extension.js:180 extension.js:1191 extension.js:1269 extension.js:1285
+msgid "All applications"
+msgstr "全てのアプリケーション"
+
+#: extension.js:314 extension.js:714 extension.js:903
+msgid "Menu"
+msgstr "メニュー"
+
+#: extension.js:599
+msgid "Save"
+msgstr "保存"
+
+#: extension.js:599
+msgid "Apply"
+msgstr "適用"
+
+#: extension.js:599
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: extension.js:602 extension.js:975
+msgid "AxeMenu settings"
+msgstr "AxeMenuの設定"
+
+#: extension.js:950
+msgid "Network"
+msgstr "ネットワーク"
+
+#: extension.js:958
+msgid "Search"
+msgstr "検索"
+
+#: extension.js:985
+msgid "Computer"
+msgstr "コンピューター"
+
+#: extension.js:993
+msgid "Home Folder"
+msgstr "ホームフォルダー"
+
+#: extension.js:1001
+msgid "Desktop"
+msgstr "デスクトップ"
+
+#: extension.js:1196 extension.js:1277 extension.js:1526
+msgid "Favorites"
+msgstr "お気に入り"
+
+#: extension.js:1261
+msgid "Type to search..."
+msgstr "検索するものを入力..."
+
+#: extension.js:1383
+msgid "Places"
+msgstr "場所"
+
+#: extension.js:1391
+msgid "Bookmarks"
+msgstr "ブックマーク"
+
+#: extension.js:1399
+msgid "System"
+msgstr "システム"
+
+#: extension.js:1413
+msgid "Restart Shell"
+msgstr "シェルの再起動"
+
+#: extension.js:1419
+msgid "Logout"
+msgstr "ログアウト"
+
+#: extension.js:1425
+msgid "Power Off"
+msgstr "電源を切る"

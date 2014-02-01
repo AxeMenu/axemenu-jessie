@@ -1,0 +1,213 @@
+.applications-menu-favorites-box {
+    padding: 15px;
+}
+.axemenu-icon {
+    padding-right: 0px;
+}
+.application-menu-button-label {
+    padding-left: 10px;
+}
+.applications-menu-favorites-button {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+.applications-menu-favorites-button:hover {
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(255,255,255,0.2);
+    background-gradient-end: rgba(255,255,255,0.08);
+    box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.06);
+    border-radius: 4px;
+}
+.places-box {
+    padding: 10px;
+}
+.places-button {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+.categories-box {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.categories-scrollbox {
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+.main-box {
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+.applications-box {
+    padding-right: 10px;
+}
+.applications-scrollbox {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.categories-app-box {
+
+}
+.rightpane-box {
+
+}
+.favorites-button-label {
+    padding-left: 10px;
+}
+.favorites-button-box {
+    padding-left: 0px;
+}
+.application-button {
+    padding-top: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+}
+.application-button:hover,.category-button:hover,
+.application-button-selected {
+    padding-top: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(255,255,255,0.2);
+    background-gradient-end: rgba(255,255,255,0.08);
+    box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.06);
+    border-radius: 4px;
+}
+.application-button-selected {
+    font-weight: bold;
+}
+.application-button-label { 
+    padding-left: 5px;
+}
+.application-button-label-favorites { 
+    padding-left: 5px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.category-button {
+    padding-top: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px; 
+    font-weight: normal;
+}
+.category-button-selected,.category-button:hover {
+    padding-top: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px; 
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(255,255,255,0.2);
+    background-gradient-end: rgba(255,255,255,0.08);
+    box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.06);
+    border-radius: 4px;
+}
+.favswich-button {
+    width: 150px;
+    font-weight: bold;
+}
+.leftpane-box {
+    padding-right: 10px;
+    font-size: 12px;
+}
+.category-button-label { 
+    padding-left: 5px;
+}
+.category-button-button:hover {
+    background-color: #969696;
+    border-radius: 8px;
+}
+.selected-app-box {
+    padding-right: 30px;
+    padding-left: 28px;
+    text-align: right;
+}
+.selected-app-title {
+    font-weight: bold;
+    font-size: small;
+}
+.selected-app-description {
+    max-width: 220px;
+}
+.search_box {
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-bottom: 10px;
+}
+.pane-title {
+    font-weight: bold;
+    padding: 7px 0;
+    font-size: 10pt;
+}
+.config-menu-dialog-box {
+    font-size: 11pt;
+}
+.config-dialog-label {
+    font-size: 10pt;
+}
+.config-dialog-header {
+    font-size: normal;
+    font-weight: bold;
+    padding: 6px;
+}
+.config-dialog-header.nb {
+    text-align: center;
+    background: rgba(255,255,255,0.08);
+    border-radius: 4px;
+}
+.config-dialog-entry {
+    padding: 3px 4px;
+    border-radius: 3px;
+    color: black;
+    selected-color: black;
+    border: 1px solid rgba(245,245,245,0.2);
+    background-gradient-direction: vertical;
+    background-gradient-start: rgb(200,200,200);
+    background-gradient-end: white;
+    transition-duration: 300;
+    box-shadow: inset 0px 2px 4px rgba(0,0,0,0.6);
+    caret-color: #a8a8a8;
+    width: 55px;
+    font-size: small;
+}
+.config-dialog-entry.sysapps {
+    width: 400px;
+}
+.config-button-label-entry {
+    width: 150px;
+    padding: 3px 4px;
+}
+.config-notebook-box {
+    width: 600px;
+    height: 390px;
+    padding-top: 15px;
+}
+.config-notebook-tabs {
+    width: 140px;
+    padding-right: 30px;
+    font-size: small;
+    spacing: 8px;
+}
+.config-notebook-control-box {
+    spacing: 10px;
+}
+.button-reset {
+    border: #a60000 1px solid;
+    color: #a60000;
+    font-size: 10pt;
+    border-radius: 4px;
+    padding: 4px 6px;
+}
+.button-reset:hover {
+    padding: 4px 6px;
+    border: #f00 1px solid;
+    color: #f00;
+}

@@ -1,0 +1,201 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: axeMenu 0.8.2\n"
+"Language: pl_PL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Applications"
+msgstr "Programy"
+
+msgid "Favorites"
+msgstr "Ulubione"
+
+msgid "All applications"
+msgstr "Wszystkie programy"
+
+msgid "Type to search..."
+msgstr "Szukaj..."
+
+msgid "Menu"
+msgstr "Menu"
+
+msgid "Places"
+msgstr "Miejsca"
+
+msgid "System"
+msgstr "System"
+
+msgid "Power Off"
+msgstr "Zakończ"
+
+msgid "Logout"
+msgstr "Wyloguj"
+
+msgid "Restart Shell"
+msgstr "Zresetuj powłokę"
+
+msgid "Computer"
+msgstr "Komputer"
+
+msgid "Network"
+msgstr "Sieć"
+
+msgid "Search"
+msgstr "Szukaj"
+
+msgid "Bookmarks"
+msgstr "Zakładki"
+
+msgid "Home Folder"
+msgstr "Katalog domowy"
+
+msgid "Desktop"
+msgstr "Pulpit"
+
+msgid "AxeMenu settings"
+msgstr "Ustawienia AxeMenu"
+
+msgid "Start with favorites"
+msgstr "Pokaż pierw ulubione"
+
+msgid "Display Activites button"
+msgstr "Wyświetl przycisk Aktywności"
+
+msgid "Display Places section"
+msgstr "Wyświetl sekcję Miejsca"
+
+msgid "Display Bookmarks section"
+msgstr "Wyświetl sekcję Zakładki"
+
+msgid "Display System section"
+msgstr "Wyświetl sekcję System"
+
+msgid "Display Shutdown section"
+msgstr "Wyświetl sekcję Zakończenia"
+
+msgid "Favorites has label"
+msgstr "Ulubione mają etykiety"
+
+msgid "Favorites columns count"
+msgstr "Liczba kolumn ulubionych"
+
+msgid "Favorites icons size (px)"
+msgstr "Wielkość ikon ulubionych (px)"
+
+msgid "Max bookmarks count (zero for show all)"
+msgstr "Maksymalna liczba zakładek (zero aby pokazać wszystkie)"
+
+msgid "Category icons size (px)"
+msgstr "Wielkość ikon kategorii (px)"
+
+msgid "Left pane icons size (px)"
+msgstr "Wielkość ikon w lewym panelu (px)"
+
+msgid "Applications icons size (px)"
+msgstr "Wielkość ikon programów (px)"
+
+msgid "Main menu width (px)"
+msgstr "Szerokość głównego menu (px)"
+
+msgid "Left pane width (px)"
+msgstr "Szerokość lewego panelu (px)"
+
+msgid "Categories box width (px)"
+msgstr "Szerokość pola kategorii (px)"
+
+msgid "System Applications (Left pane)"
+msgstr "Programy systemowe (Lewy panel)"
+
+msgid "Save"
+msgstr "Zapisz"
+
+msgid "Cancel"
+msgstr "Anuluj"
+
+msgid "Button label"
+msgstr "Etykieta przycisku"
+
+msgid "Activites button rightmost"
+msgstr "Przycisk Aktywności po prawej stronie"
+
+msgid "\"Menu\" button with icon"
+msgstr "Przycisk \"Menu\" z ikoną"
+
+msgid "Yes"
+msgstr "Tak"
+
+msgid "No"
+msgstr "Nie"
+
+msgid "Remove \"%s\" from favorites?"
+msgstr "Usunąć \"%s\" z ulubionych?"
+
+msgid "Add \"%s\" to favorites?"
+msgstr "Dodać \"%s\" do ulubionych?"
+
+msgid "Apply"
+msgstr "Zastosuj"
+
+msgid "Main"
+msgstr "Główne"
+
+msgid "Left pane"
+msgstr "Lewy panel"
+
+msgid "Right pane"
+msgstr "Prawy panel"
+
+msgid "About"
+msgstr "O rozszerzeniu"
+
+msgid "Hot corner"
+msgstr "Aktywny róg"
+
+msgid "Icon name"
+msgstr "Nazwa ikony"
+
+msgid "Additionally"
+msgstr "Dodatkowe"
+
+msgid "Width of search entry (px)"
+msgstr "Szerokość pola wyszukiwania (px)"
+
+msgid "Display Search button"
+msgstr "Wyświetl przycisk Szukaj"
+
+msgid "Recent documents"
+msgstr "Ostatnie dokumenty"
+
+msgid "Fixed height of menu"
+msgstr "Stała wysokość menu"
+
+msgid "AxeMenu in Hot corner"
+msgstr "AxeMenu w aktywnym rogu"
+
+msgid "Select Category by click"
+msgstr "Wybierz kategorie przez kliknięcie"
+
+msgid "Display bottom pane"
+msgstr "Wyświetl dolny panel"
+
+msgid "Categories box has scroll"
+msgstr "Pole kategorii ma być przewijane"
+
+msgid "Display Left pane"
+msgstr "Wyświetl lewy panel"
+
+msgid "Search tool"
+msgstr "Narzędzie wyszukiwania"
+
+msgid "Reset to default"
+msgstr "Przywróć domyślne"
+
+msgid "Reset"
+msgstr "Zresetuj"
+
+msgid "Main icons size (px)"
+msgstr "Wielkość głównych ikon (px)"
+

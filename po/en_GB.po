@@ -1,0 +1,201 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: axeMenu 0.8.2\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Applications"
+msgstr ""
+
+msgid "Favorites"
+msgstr ""
+
+msgid "All applications"
+msgstr ""
+
+msgid "Type to search..."
+msgstr ""
+
+msgid "Menu"
+msgstr ""
+
+msgid "Places"
+msgstr ""
+
+msgid "System"
+msgstr ""
+
+msgid "Power Off"
+msgstr ""
+
+msgid "Logout"
+msgstr ""
+
+msgid "Restart Shell"
+msgstr ""
+
+msgid "Computer"
+msgstr ""
+
+msgid "Network"
+msgstr ""
+
+msgid "Search"
+msgstr ""
+
+msgid "Bookmarks"
+msgstr ""
+
+msgid "Home Folder"
+msgstr ""
+
+msgid "Desktop"
+msgstr ""
+
+msgid "AxeMenu settings"
+msgstr ""
+
+msgid "Start with favorites"
+msgstr ""
+
+msgid "Display Activites button"
+msgstr ""
+
+msgid "Display Places section"
+msgstr ""
+
+msgid "Display Bookmarks section"
+msgstr ""
+
+msgid "Display System section"
+msgstr ""
+
+msgid "Display Shutdown section"
+msgstr ""
+
+msgid "Favorites has label"
+msgstr ""
+
+msgid "Favorites columns count"
+msgstr ""
+
+msgid "Favorites icons size (px)"
+msgstr ""
+
+msgid "Max bookmarks count (zero for show all)"
+msgstr ""
+
+msgid "Category icons size (px)"
+msgstr ""
+
+msgid "Left pane icons size (px)"
+msgstr ""
+
+msgid "Applications icons size (px)"
+msgstr ""
+
+msgid "Main box width (px)"
+msgstr ""
+
+msgid "Left pane width (px)"
+msgstr ""
+
+msgid "Categories box width (px)"
+msgstr ""
+
+msgid "System Applications (Left pane)"
+msgstr ""
+
+msgid "Save"
+msgstr ""
+
+msgid "Cancel"
+msgstr ""
+
+msgid "Button label"
+msgstr ""
+
+msgid "Activites button rightmost"
+msgstr ""
+
+msgid "\"Menu\" button with icon"
+msgstr ""
+
+msgid "Yes"
+msgstr ""
+
+msgid "No"
+msgstr ""
+
+msgid "Remove \"%s\" from favorites?"
+msgstr ""
+
+msgid "Add \"%s\" to favorites?"
+msgstr ""
+
+msgid "Apply"
+msgstr ""
+
+msgid "Main"
+msgstr ""
+
+msgid "Left pane"
+msgstr ""
+
+msgid "Right pane"
+msgstr ""
+
+msgid "About"
+msgstr ""
+
+msgid "Hot corner"
+msgstr ""
+
+msgid "Icon name"
+msgstr ""
+
+msgid "Additionally"
+msgstr ""
+
+msgid "Width of search entry (px)"
+msgstr ""
+
+msgid "Display Search button"
+msgstr ""
+
+msgid "Recent documents"
+msgstr ""
+
+msgid "Fixed height of menu"
+msgstr ""
+
+msgid "AxeMenu in Hot corner"
+msgstr ""
+
+msgid "Select Category by click"
+msgstr ""
+
+msgid "Display bottom pane"
+msgstr ""
+
+msgid "Categories box has scroll"
+msgstr ""
+
+msgid "Display Left pane"
+msgstr ""
+
+msgid "Search tool"
+msgstr ""
+
+msgid "Reset to default"
+msgstr ""
+
+msgid "Reset"
+msgstr ""
+
+msgid "Main icons size (px)"
+msgstr ""
+

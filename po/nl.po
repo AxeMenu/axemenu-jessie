@@ -1,0 +1,207 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: axeMenu 0.8.2\n"
+"Language: Dutch (nl)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+msgid "Applications"
+msgstr "Toepassingen"
+
+msgid "Favorites"
+msgstr "Favorieten"
+
+msgid "All applications"
+msgstr "Alle toepassingen"
+
+msgid "Type to search..."
+msgstr "Typen om te zoeken…"
+
+msgid "Menu"
+msgstr "Menu"
+
+msgid "Places"
+msgstr "Locaties"
+
+msgid "System"
+msgstr "Systeem"
+
+msgid "Power Off"
+msgstr "Uitschakelen"
+
+msgid "Logout"
+msgstr "Afmelden"
+
+msgid "Restart Shell"
+msgstr "Shell herstarten"
+
+msgid "Computer"
+msgstr "Computer"
+
+msgid "Network"
+msgstr "Netwerk"
+
+msgid "Search"
+msgstr "Zoeken"
+
+msgid "Bookmarks"
+msgstr "Bladwijzers"
+
+msgid "Home Folder"
+msgstr "Persoonlijke map"
+
+msgid "Desktop"
+msgstr "Bureaublad"
+
+msgid "AxeMenu settings"
+msgstr "AxeMenu-instellingen"
+
+msgid "Start with favorites"
+msgstr "Starten met favorieten"
+
+msgid "Display Activites button"
+msgstr "Activiteitenknop tonen"
+
+msgid "Display Places section"
+msgstr "Locatiesectie tonen"
+
+msgid "Display Bookmarks section"
+msgstr "Bladwijzerssectie tonen"
+
+msgid "Display System section"
+msgstr "Systeemsectie tonen"
+
+msgid "Display Shutdown section"
+msgstr "Uitschakelen-sectie tonen"
+
+msgid "Favorites has label"
+msgstr "Favorieten met tekstlabel"
+
+msgid "Favorites columns count"
+msgstr "Aantal favorietenkolommen"
+
+msgid "Favorites icons size (px)"
+msgstr "Grootte favorietenpictogrammen (px) "
+
+msgid "Max bookmarks count (zero for show all)"
+msgstr "Maximum aantal bladwijzers (0 = alle)"
+
+msgid "Category icons size (px)"
+msgstr "Grootte categoriepictogrammen (px) "
+
+msgid "Left pane icons size (px)"
+msgstr "Grootte pictogrammen linkerpaneel (px) "
+
+msgid "Applications icons size (px)"
+msgstr "Grootte toepassingspictogrammen (px) "
+
+msgid "Main box width (px)"
+msgstr "Breedte hoofdvenster (px)"
+
+msgid "Left pane width (px)"
+msgstr "Breedte linkerpaneel (px)"
+
+msgid "Categories box width (px)"
+msgstr "Breedte categoriepaneel (px)"
+
+msgid "System Applications (Left pane)"
+msgstr "Systeemtoepassingen (linkerpaneel)"
+
+msgid "Save"
+msgstr "Opslaan"
+
+msgid "Cancel"
+msgstr "Annuleren"
+
+msgid "Button label"
+msgstr "Knoptekst"
+
+msgid "Activites button rightmost"
+msgstr "Activiteitenknop uiterst rechts"
+
+msgid "\"Menu\" button with icon"
+msgstr "Menuknop met pictogram"
+
+msgid "Yes"
+msgstr "Ja"
+
+msgid "No"
+msgstr "Nee"
+
+msgid "Remove \"%s\" from favorites?"
+msgstr "\"%s\" uit favorieten verwijderen?"
+
+msgid "Add \"%s\" to favorites?"
+msgstr "\"%s\" aan favorieten toevoegen?"
+
+msgid "Apply"
+msgstr "Toepassen"
+
+msgid "Main"
+msgstr "Algemeen"
+
+msgid "Left pane"
+msgstr "Linkerpaneel"
+
+msgid "Right pane"
+msgstr "Rechterpaneel"
+
+msgid "About"
+msgstr "Info"
+
+msgid "Hot corner"
+msgstr "Hot corner"
+
+msgid "Icon name"
+msgstr "Pictogramnaam"
+
+msgid "Additionally"
+msgstr "Extra"
+
+msgid "Width of search entry (px)"
+msgstr "Breedte van zoekveld (px)"
+
+msgid "Display Search button"
+msgstr "Zoekknop tonen"
+
+msgid "Recent documents"
+msgstr "Recente documenten"
+
+msgid "Fixed height of menu"
+msgstr "Vaste hoogte van menu"
+
+msgid "AxeMenu in Hot corner"
+msgstr "AxeMenu in Hot corner"
+
+msgid "Select Category by click"
+msgstr "Categorie selecteren door klikken"
+
+msgid "Display bottom pane"
+msgstr "Onderpaneel tonen"
+
+msgid "Categories box has scroll"
+msgstr "Categoriepaneel met scrolfunctie"
+
+msgid "Display Left pane"
+msgstr "Linkerpaneel tonen"
+
+msgid "Search tool"
+msgstr "Zoekgereedschap"
+
+msgid "Reset to default"
+msgstr "Standaardinstellingen herstellen "
+
+msgid "Reset"
+msgstr "Herstellen"
+
+msgid "Main icons size (px)"
+msgstr "Grootte hoofdpictogrammen (px)"
+
+msgid "Main menu width (px)"
+msgstr "Breedte hoofdmenu (px)"
+

@@ -1,0 +1,204 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: axeMenu 0.8.2\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Applications"
+msgstr "Anwendungen"
+
+msgid "Favorites"
+msgstr "Favoriten"
+
+msgid "All applications"
+msgstr "Alle Anwendungen"
+
+msgid "Type to search..."
+msgstr "Suchbegriff ..."
+
+msgid "Menu"
+msgstr "Menü"
+
+msgid "Places"
+msgstr "Rechner"
+
+msgid "System"
+msgstr "System"
+
+msgid "Power Off"
+msgstr "PC ausschalten"
+
+msgid "Logout"
+msgstr "Abmelden"
+
+msgid "Restart Shell"
+msgstr "Shell neu laden"
+
+msgid "Computer"
+msgstr "Computer"
+
+msgid "Network"
+msgstr "Netzwerk"
+
+msgid "Search"
+msgstr "Dateisuche"
+
+msgid "Bookmarks"
+msgstr "Lesezeichen"
+
+msgid "Home Folder"
+msgstr "Persönlicher Ordner"
+
+msgid "Desktop"
+msgstr "Desktop"
+
+msgid "AxeMenu settings"
+msgstr "AxeMenu-Einstellungen"
+
+msgid "Start with favorites"
+msgstr "Beim Menü-Aufruf Favoriten anzeigen"
+
+msgid "Display Activites button"
+msgstr "Zusätzliches Symbol für Overlay-Modus im Benachrichtigungsfeld"
+
+msgid "Display Places section"
+msgstr "Sektion \"Rechner\" anzeigen"
+
+msgid "Display Bookmarks section"
+msgstr "Sektion \"Lesezeichen\" anzeigen"
+
+msgid "Display System section"
+msgstr "Sektion \"System\" anzeigen"
+
+msgid "Display Shutdown section"
+msgstr "Sektion zum Herunterfahren etc. anzeigen"
+
+msgid "Favorites has label"
+msgstr "Favoriten haben Titel"
+
+msgid "Favorites columns count"
+msgstr "Anzahl der Spalten für die Favoriten"
+
+msgid "Favorites icons size (px)"
+msgstr "Größe der Favoriten-Symbole"
+
+msgid "Max bookmarks count (zero for show all)"
+msgstr "Anzahl der Lesezeichen (0 = alle)"
+
+msgid "Category icons size (px)"
+msgstr "Größe der Symbole in den Anwendungskategorien"
+
+msgid "Left pane icons size (px)"
+msgstr "Größe der Symbole im linken Menübereich"
+
+msgid "Applications icons size (px)"
+msgstr "Größe der Symbole für die Anwendungen"
+
+msgid "Main box width (px)"
+msgstr "Breite des Hauptfensters"
+
+msgid "Left pane width (px)"
+msgstr "Breite des linken Menübereichs"
+
+msgid "Categories box width (px)"
+msgstr "Breite der Kategorienspalte"
+
+msgid "System Applications (Left pane)"
+msgstr "Systemanwendungen (im linkem Menübereich)"
+
+msgid "Save"
+msgstr "Speichern"
+
+msgid "Cancel"
+msgstr "Abbruch"
+
+msgid "Button label"
+msgstr "Titel der Menüschaltfläche"
+
+msgid "Activites button rightmost"
+msgstr "Zusätzliches Symbol ans Ende des Panels"
+
+msgid "\"Menu\" button with icon"
+msgstr "Menüsymbol anzeigen"
+
+msgid "Yes"
+msgstr "Ja"
+
+msgid "No"
+msgstr "Nein"
+
+msgid "Remove \"%s\" from favorites?"
+msgstr "\"%s\" aus Favoriten entfernen?"
+
+msgid "Add \"%s\" to favorites?"
+msgstr "\"%s\" zu Favoriten hinzufügen?"
+
+msgid "Apply"
+msgstr "Anwenden"
+
+msgid "Main"
+msgstr "Allgemeines"
+
+msgid "Left pane"
+msgstr "Linker Menübereich"
+
+msgid "Right pane"
+msgstr "Rechter Menübereich"
+
+msgid "About"
+msgstr "Über AxeMenu"
+
+msgid "Hot corner"
+msgstr "Hot Corner für Overlay-Modus aktiv"
+
+msgid "Icon name"
+msgstr "Dateiname des Symbols"
+
+msgid "Additionally"
+msgstr "Zusätzliches"
+
+msgid "Width of search entry (px)"
+msgstr "Breite des Suchbegriffsfeldes"
+
+msgid "Display Search button"
+msgstr "\"Dateisuche\" anzeigen"
+
+msgid "Recent documents"
+msgstr "Zuletzt zugegriffene Dokumente"
+
+msgid "Fixed height of menu"
+msgstr "Feste Höhe des Menüs"
+
+msgid "AxeMenu in Hot corner"
+msgstr "Per Hot Corner das AxeMenu anstelle des Overlay-Modus aufrufen"
+
+msgid "Select Category by click"
+msgstr "Anwendungskategorien per Mausklick auswählen"
+
+msgid "Display bottom pane"
+msgstr "Zusatzleiste am unteren Rand des Menüs"
+
+msgid "Categories box has scroll"
+msgstr "Anwendungskategorien verfügen über eine Bildlaufleiste"
+
+msgid "Display Left pane"
+msgstr "Linken Menübereich anzeigen"
+
+msgid "Search tool"
+msgstr "Startbefehl für die Dateisuche"
+
+msgid "Reset to default"
+msgstr "Einstellungen zurücksetzen"
+
+msgid "Reset"
+msgstr "Jetzt zurücksetzen"
+
+msgid "Main icons size (px)"
+msgstr "Größe des Menüsymbols"
+
+msgid "Main menu width (px)"
+msgstr "Breite des Menüs"
+
