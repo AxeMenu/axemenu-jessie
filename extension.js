@@ -46,7 +46,7 @@ let _installedChangedId;
 let _favoritesChangedId;
 let _bookmarksChangedId;
 let hotCorner;
-let extensionMeta, egoVersion;
+let egoVersion;
 let layoutManager;
 
 
@@ -127,7 +127,7 @@ CategoryButton.prototype = {
             this.icon = new St.Icon({icon_name: this.icon_name, icon_size: iconSize});
 
         } else {
-            this.icon = new St.Icon({icon_name: 'start-here', icon_size: iconSize});
+            this.icon = new St.Icon({icon_name: 'start-here-symbolic', icon_size: iconSize});
         }
         this.buttonbox.add_actor(this.icon);
         this.buttonbox.add(this.label, { y_align: St.Align.MIDDLE, y_fill: false });
@@ -224,7 +224,7 @@ AxeButton.prototype = {
         }
     },
     _getSettings: function () {
-        let source = Gio.SettingsSchemaSource.new_from_directory(extensionMeta.path + "/schemas", Gio.SettingsSchemaSource.get_default(), false);
+        let source = Gio.SettingsSchemaSource.new_from_directory(Extension.path + "/schemas", Gio.SettingsSchemaSource.get_default(), false);
         let schema = source.lookup('org.gnome.shell.extensions.axemenu.keybindings', false);
         return new Gio.Settings({settings_schema: schema});
     },
@@ -254,10 +254,15 @@ AxeButton.prototype = {
             this.toggleMenu();
         }
         else if (button == 3) {
-            if (typeof this._configDialog === 'undefined') {
-                this._configDialog = new ConfigDialog(this.cm);
+            try {
+                if (typeof this._configDialog === 'undefined') {
+                    this._configDialog = new ConfigDialog(this.cm);
+                }
+                this._configDialog.open();
             }
-            this._configDialog.open();
+            catch (e) {
+                global.log(e);
+            }
         }
     },
     _onSourceKeyPress: function (actor, event) {
@@ -318,7 +323,7 @@ ApplicationsButton.prototype = {
         this._box = new St.BoxLayout({ name: 'axeMenu' });
         this._iconBox = new St.Bin();
         this._box.add(this._iconBox, { y_align: St.Align.MIDDLE, y_fill: false });
-        this._icon = new St.Icon({ icon_name: 'start-here', icon_size: 18,style_class: 'axemenu-icon' });
+        this._icon = new St.Icon({ icon_name: 'start-here-symbolic', icon_size: 18,style_class: 'axemenu-icon' });
         this._iconBox.child = this._icon;
         this._label = new St.Label({ track_hover: true, style_class: 'application-menu-button-label'});
         this._box.add(this._label, { y_align: St.Align.MIDDLE, y_fill: false });
@@ -430,11 +435,16 @@ ApplicationsButton.prototype = {
     _createSettingsButton: function () {
         let buttonContainer = new St.BoxLayout({style: "padding: 10px 0 0 10px;", opacity: 120});
         let button = new BaseButton('', 'system-run', 18, null, function () {
-            if (!appsMenuButton._configDialog) {
-                appsMenuButton._configDialog = new ConfigDialog(appsMenuButton.cm);
+            try {
+                if (!appsMenuButton._configDialog) {
+                    appsMenuButton._configDialog = new ConfigDialog(appsMenuButton.cm);
+                }
+                appsMenuButton._configDialog.open();
+                appsMenuButton.menu.close();
             }
-            appsMenuButton._configDialog.open();
-            appsMenuButton.menu.close();
+            catch (e) {
+                global.log(e);
+            }
         });
         button.actor.connect('enter-event', Lang.bind(this, function () {
             this.selectedAppTitle.set_text(_("AxeMenu settings"));
@@ -906,13 +916,13 @@ ApplicationsButton.prototype = {
             });
             this.leftPane.add_actor(reexecButton.actor);
 
-            let logoutButton = new BaseButton(_("Logout"), "edit-clear", 20, null, function () {
+            let logoutButton = new BaseButton(_("Logout"), "user-offline-symbolic", 20, null, function () {
                 _session.LogoutRemote(0);
                 appsMenuButton.menu.close();
             });
             this.leftPane.add_actor(logoutButton.actor);
 
-            let exitButton = new BaseButton(_("Power Off"), "system-shutdown", 20, null, function () {
+            let exitButton = new BaseButton(_("Power Off"), "system-shutdown-symbolic", 20, null, function () {
                 _session.ShutdownRemote();
                 appsMenuButton.menu.close();
             });
@@ -1045,19 +1055,6 @@ ApplicationsButton.prototype = {
             return;
         this._searchTimeoutId = Mainloop.timeout_add(150, Lang.bind(this, this._doSearch));
     },
-    _findBookmarksFile: function() {
-        let paths = [
-            GLib.build_filenamev([GLib.get_user_config_dir(), 'gtk-3.0', 'bookmarks']),
-            GLib.build_filenamev([GLib.get_home_dir(), '.gtk-bookmarks']),
-        ];
-
-        for (let i = 0; i < paths.length; i++) {
-            if (GLib.file_test(paths[i], GLib.FileTest.EXISTS))
-                return Gio.File.new_for_path(paths[i]);
-        }
-
-        return null;
-    },
     _listBookmarks: function (pattern) {
         if (!this._bookmarksFile) return [];
         let content = Shell.get_file_contents_utf8_sync(this._bookmarksFile.get_path());
@@ -1110,13 +1107,15 @@ ApplicationsButton.prototype = {
         return bookmarks;
     },
     _listDevices: function (pattern) {
-        /* TODO fix devices
-        let devices = this.placesManager.getMounts();
+        //TODO fix devices
+        /*
+        let devices = this.placesManager.get('devices');
         var res = new Array();
         for (let id = 0; id < devices.length; id++) {
             if (!pattern || devices[id].name.toLowerCase().indexOf(pattern) != -1) res.push(devices[id]);
         }
-        return res;*/
+        return res;
+        */
         return [];
     },
     _listApplications: function (category_menu_id, pattern) {
@@ -1199,7 +1198,6 @@ function disable() {
 
 function init(metadata) {
     let localePath = metadata.path + '/locale';
-    extensionMeta = metadata;
     egoVersion = ShellVersion[1] < 4 ? metadata.version : metadata.metadata['version'];
     Gettext.bindtextdomain('axemenu', localePath);
 }
