@@ -434,7 +434,10 @@ ConfigDialog.prototype = {
         tab = this.notebook.addTab(_('About'));
         let about = 'error';
         try {
-            about = GLib.file_get_contents(extensionMeta.path + "/ABOUT")[1].toString();
+            //about = GLib.file_get_contents(extensionMeta.path + "/ABOUT")[1].toString();
+            about = GLib.file_get_contents(extensionMeta.path + "/ABOUT");
+            global.log(about);
+            global.log(about.contents);
             about = about.replace('@version@', Version).replace('@e.g.o-version@', egoVersion);
         } catch (e) {
         }

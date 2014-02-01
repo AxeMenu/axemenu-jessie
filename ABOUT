@@ -1,9 +1,9 @@
-<b>Axe Menu extension for Gnome Shell 3.2, 3.4, 3.5.2</b>
+<b>Axe Menu extension for Gnome Shell 3.8</b>
 (Based on [url=http://packages.linuxmint.com/list.php?release=Lisa]mgse-menu_1.1.6[/url])
 
 Version: <b>@version@</b> (extensions.gnome.org: <b>@e.g.o-version@</b>)
 License: <b>GPL v2+</b>
-Homepage:  [url=http://k210.org/axemenu/]http://k210.org/axemenu/[/url]
+Homepage:  [url=https://github.com/AxeMenu]https://github.com/AxeMenu[/url]
 Developer: easy2002  <[url=mailto:e2002@bk.ru]e2002@bk.ru[/url]>
 
 <b>Thanks for translations</b>:
