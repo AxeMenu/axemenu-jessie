@@ -436,9 +436,7 @@ ApplicationsButton.prototype = {
         let buttonContainer = new St.BoxLayout({style: "padding: 10px 0 0 10px;", opacity: 120});
         let button = new BaseButton('', 'system-run', 18, null, function () {
             try {
-                if (!appsMenuButton._configDialog) {
-                    appsMenuButton._configDialog = new ConfigDialog(appsMenuButton.cm);
-                }
+                appsMenuButton._configDialog = new ConfigDialog(appsMenuButton.cm);
                 appsMenuButton._configDialog.open();
                 appsMenuButton.menu.close();
             }

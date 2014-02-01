@@ -18,6 +18,12 @@ const Version = Extension.imports.common.Version;
 const cleanActor = Extension.imports.common.cleanActor;
 const insert_actor_to_box = Extension.imports.common.insert_actor_to_box;
 
+
+/**
+ *
+ * @param parent {ApplicationsButton}
+ * @constructor
+ */
 function ConfigManager(parent) {
     this._init(parent);
 }
@@ -126,7 +132,6 @@ ConfigManager.prototype = {
         this.click_on_category = this.get_val('click_on_category', false);
         this.search_tool = decodeURIComponent(this.get_val('search_tool', "gnome-search-tool"));
         this.stored_category_id = this.get_val('category_menu_id', null);
-        //this.symbolic_icons = this.get_val('symbolic_icons', false);
     },
     saveConfig: function () {
         GLib.file_set_contents(this.config_file, JSON.stringify(this._conf), -1);
@@ -434,12 +439,10 @@ ConfigDialog.prototype = {
         tab = this.notebook.addTab(_('About'));
         let about = 'error';
         try {
-            //about = GLib.file_get_contents(extensionMeta.path + "/ABOUT")[1].toString();
-            about = GLib.file_get_contents(extensionMeta.path + "/ABOUT");
-            global.log(about);
-            global.log(about.contents);
-            about = about.replace('@version@', Version).replace('@e.g.o-version@', egoVersion);
+            about = GLib.file_get_contents(Extension.path + "/ABOUT")[1].toString();
+            about = about.replace('@version@', Version).replace('@e.g.o-version@', '0.8.4');
         } catch (e) {
+            global.log(e);
         }
 
         let aboutText = new MicroHighlighter(this, about, false, true);
