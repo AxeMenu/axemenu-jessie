@@ -1,10 +1,4 @@
-/**
- * Created with IntelliJ IDEA.
- * User: Viacheslav Levashov
- * Date: 25.01.14
- * Time: 22:14
- *
- */
+
 
 
 const Lang = imports.lang;
@@ -75,8 +69,6 @@ ConfigManager.prototype = {
         this._conf = JSON.parse(data);
         this.display_activites = this.get_val('display_activites', true);
         this.activites_position = this.get_val('activites_position', false);
-        // TODO commented by me
-        //this.defaultBookmarksCount = this.parent.placesManager.getBookmarks().length > 5 ? 5 : 0;
         this.defaultBookmarksCount = 5;
         this.defaultFavColumns = global.settings.get_strv('favorite-apps').length > 12 ? 3 : 2;
         Main.panel._rightBox.remove_actor(this.parent.getActivitiesButton().actor);
@@ -92,10 +84,8 @@ ConfigManager.prototype = {
 
         if (!this.is_hot_corner) {
             this.parent._hotCorner.actor.hide();
-            //this._hotCorner.actor.show();
         } else {
             this.parent._hotCorner.actor.show();
-            //this._hotCorner.actor.hide();
         }
 
         this.icon_name = this.get_val('icon_name', 'start-here');

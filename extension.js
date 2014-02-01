@@ -362,7 +362,7 @@ ApplicationsButton.prototype = {
         this._activeContainer = null;
         this.cm = new ConfigManager(this);
         this.reloadFlag = true;
-        // TODO commented by me
+
         //this.placesManager = new PlaceDisplay.PlacesManager();
 
 
@@ -370,7 +370,7 @@ ApplicationsButton.prototype = {
         this._display();
         _installedChangedId = appsys.connect('installed-changed', Lang.bind(this, this.reDisplay));
         _favoritesChangedId = AppFavorites.getAppFavorites().connect('changed', Lang.bind(this, this.reDisplay));
-        // TODO commented by me
+
         //_bookmarksChangedId = this.placesManager.connect('bookmarks-updated',Lang.bind(this,this.reDisplay));
 
         this._bookmarksFile = this._findBookmarksFile();
@@ -1112,7 +1112,7 @@ ApplicationsButton.prototype = {
         return bookmarks;
     },
     _listDevices: function (pattern) {
-        /* TODO commented by me
+        /* TODO fix devices
         let devices = this.placesManager.getMounts();
         var res = new Array();
         for (let id = 0; id < devices.length; id++) {
@@ -1178,7 +1178,7 @@ function enable() {
 
     hotCorner = layoutManager.hotCorners[0];
 
-    //TODO Do something with hot corner
+    //TODO Do something with hot corner, for now its is always on
     //hotCorner.destroy();
     appsMenuButton = new ApplicationsButton(activitiesButton, layoutManager);
     Main.panel._addToPanelBox('axeMenu', appsMenuButton, 0, Main.panel._leftBox);

@@ -1,10 +1,4 @@
-/**
- * Created with IntelliJ IDEA.
- * User: Viacheslav Levashov
- * Date: 28.01.14
- * Time: 22:25
- *
- */
+
 
 const ShellVersion = imports.misc.config.PACKAGE_VERSION.split(".");
 const Version = '0.8.4';

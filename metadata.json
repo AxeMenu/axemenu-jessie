@@ -3,12 +3,9 @@
     "description": "Big and beautiful menu for gnome-shell.",
     "name": "Axe Menu",
     "shell-version": [
-        "3.2",
-        "3.4",
-        "3.5.2",
         "3.8"
     ],
-    "url": "http://k210.org/axemenu/",
-    "uuid": "axemenu@wheezy",
-    "version": 28
+    "url": "https://github.com/AxeMenu/",
+    "uuid": "axemenu@jessie",
+    "version": 29
 }
