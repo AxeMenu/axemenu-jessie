@@ -1,5 +1,3 @@
-
-
 const Mainloop = imports.mainloop;
 const GMenu = imports.gi.GMenu;
 const Lang = imports.lang;
@@ -1166,8 +1164,6 @@ ApplicationsButton.prototype = {
         return activitiesButton;
     }
 };
-
-
 
 function enable() {
 

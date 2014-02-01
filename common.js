@@ -1,5 +1,3 @@
-
-
 const ShellVersion = imports.misc.config.PACKAGE_VERSION.split(".");
 const Version = '0.8.4';
 const Lang = imports.lang;
@@ -29,7 +27,7 @@ const insert_actor_to_box = (ShellVersion[1] < 4) ? function (box, actor, positi
 
 /**
  * @brief descripbes the button of the system app
- * @param app -
+ * @param app
  * @param iconsize
  * @param parent{ApplicationsButton} - main menu button
  * @constructor
