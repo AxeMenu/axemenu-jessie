@@ -19,7 +19,9 @@ Installation.
 Create folder axemenu@jessie in $HOME/.local/share/gnome-shell/extensions/
 Copy the whole contents of current directory to this folder.
 
-the run from the command prompt:
+mkdir ~/.local/share/gnome-shell/extensions/axemenu@jessie
+
+then run from the command prompt:
 gnome-shell-extension-tool -e axemenu@jessie
 
 
