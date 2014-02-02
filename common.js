@@ -26,10 +26,10 @@ const insert_actor_to_box = (ShellVersion[1] < 4) ? function (box, actor, positi
 
 
 /**
- * @brief descripbes the button of the system app
+ * @brief describes the button of the system app
  * @param app
  * @param iconsize
- * @param parent{ApplicationsButton} - main menu button
+ * @param {ApplicationsButton} parent - main menu button
  * @constructor
  */
 function ApplicationButton(app, iconsize, parent) {
@@ -72,6 +72,11 @@ ApplicationButton.prototype = {
 };
 Signals.addSignalMethods(ApplicationButton.prototype);
 
+/**
+ *
+ * @param app {ApplicationsButton}
+ * @constructor
+ */
 function ConfirmDialog(app) {
     this._init(app);
 }

@@ -14,6 +14,15 @@ If you want to save the customized configuration of AxeMenu, backup
 $HOME/.config/axemenu.conf
 
 
+Installation.
+-------------
+Create folder axemenu@jessie in $HOME/.local/share/gnome-shell/extensions/
+Copy the whole contents of current directory to this folder.
+
+the run from the command prompt:
+gnome-shell-extension-tool -e axemenu@jessie
+
+
 A few words about the global key bindings.
 ------------------------------------------
 The menu is hard bound to a Super_R button.
@@ -24,7 +33,7 @@ run
 gconftool-2 -s --type string "/apps/metacity/global_keybindings/run_command_12" '<your_shortcut>'
 
 -shell 3.4+:
-change "Super_R" substring in $HOME/.local/share/gnome-shell/extensions/axemenu@wheezy/schemas/org.gnome.shell.extensions.axemenu.keybindings.gschema.xml
+change "Super_R" substring in $HOME/.local/share/gnome-shell/extensions/axemenu@jessie/schemas/org.gnome.shell.extensions.axemenu.keybindings.gschema.xml
 run
-glib-compile-schemas $HOME/.local/share/gnome-shell/extensions/axemenu@wheezy/schemas
+glib-compile-schemas $HOME/.local/share/gnome-shell/extensions/axemenu@jessie/schemas
 restart shell

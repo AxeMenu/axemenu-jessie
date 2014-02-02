@@ -4,7 +4,9 @@
 Version: <b>@version@</b> (extensions.gnome.org: <b>@e.g.o-version@</b>)
 License: <b>GPL v2+</b>
 Homepage:  [url=https://github.com/AxeMenu]https://github.com/AxeMenu[/url]
-Developer: easy2002  <[url=mailto:e2002@bk.ru]e2002@bk.ru[/url]>
+Developers:
+            easy2002  <[url=mailto:e2002@bk.ru]e2002@bk.ru[/url]>
+            Viacheslav Levashov <[url=mailto:realwenzel@gmail.com]realwenzel@gmail.com[/url]>
 
 <b>Thanks for translations</b>:
 Italian				[url=http://about.me/johnnymnemonic/]Giuseppe Palmiotto[/url]
@@ -25,4 +27,4 @@ Dutch				Rob van den Berg
 Czech				Pavel Sieder
 Finnish				Juhani Numminen
 
-[url=mailto:e2002@bk.ru?subject=AxeMenu%20translation]Send me your![/url]
+[url=mailto:realwenzel@gmail.com?subject=AxeMenu%20translation]Send me your![/url]

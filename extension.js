@@ -47,8 +47,6 @@ let _favoritesChangedId;
 let _bookmarksChangedId;
 let hotCorner;
 let egoVersion;
-let layoutManager;
-
 
 const TextDirection = (ShellVersion[1] < 4) ? St.TextDirection.LTR : Clutter.TextDirection.LTR;
 const getTextDirection = (ShellVersion[1] < 4) ? function (actor) {
@@ -157,11 +155,19 @@ CategoryButton.prototype = {
 
 Signals.addSignalMethods(CategoryButton.prototype);
 
-function FavoritesButton(app, iconSize, favoritesText) {
-    this._init(app, iconSize, favoritesText);
+/**
+ *
+ * @param app
+ * @param iconSize
+ * @param favoritesText
+ * @param {ApplicationsButton} applicationsButton
+ * @constructor
+ */
+function FavoritesButton(app, iconSize, favoritesText, applicationsButton) {
+    this._init(app, iconSize, favoritesText, applicationsButton);
 }
 FavoritesButton.prototype = {
-    _init: function (app, iconSize, favoritesText) {
+    _init: function (app, iconSize, favoritesText, applicationsButton) {
         this._app = app;
         this.actor = new St.Button({ reactive: true, style_class: 'applications-menu-favorites-button', x_align: favoritesText ? St.Align.START : St.Align.MIDDLE });
         this.actor._delegate = this;
@@ -176,7 +182,7 @@ FavoritesButton.prototype = {
         this._releaseEventId = this.actor.connect('button-release-event', Lang.bind(this, this._onButtonRelease));
         this._clickEventId = this.actor.connect('clicked', Lang.bind(this, function () {
             this._app.open_new_window(-1);
-            appsMenuButton.menu.close();
+            applicationsButton.menu.close();
         }));
         this.actor.connect('destroy', Lang.bind(this, this._onDestroy));
     },
@@ -230,7 +236,7 @@ AxeButton.prototype = {
     },
     toggleMenu: function () {
         if (!this.menu.isOpen) {
-            let monitor = layoutManager.primaryMonitor;
+            let monitor = this._layoutManager.primaryMonitor;
             this.menu.actor.style = ('max-height: ' + Math.round(monitor.height - Main.panel.actor.height - 80) + 'px;');
         } else {
             this.reloadFlag = false;
@@ -404,7 +410,7 @@ ApplicationsButton.prototype = {
     },
     _containerAllocate: function (actor, box, flags) {
         this._box.allocate(box, flags);
-        let primary = layoutManager.primaryMonitor;
+        let primary = this._layoutManager.primaryMonitor;
         let hotBox = new Clutter.ActorBox();
         let ok, x, y;
         if (getTextDirection(actor) == TextDirection) {
@@ -853,7 +859,7 @@ ApplicationsButton.prototype = {
         for (let i = 0; i < launchers.length; ++i) {
             let app = appSys.lookup_app(launchers[i]);
             if (app) {
-                let button = new FavoritesButton(app, this.cm.favorites_icon_size, this.cm.favorites_text);
+                let button = new FavoritesButton(app, this.cm.favorites_icon_size, this.cm.favorites_text, this);
                 this.favoritesTable.add(button.actor, { row: rownum, col: column });
                 this._addFavEnterEvent(button, Lang.bind(this, function () {
                     this.selectedAppTitle.set_text(button._app.get_name());
@@ -1167,7 +1173,7 @@ function enable() {
     activitiesButton = Main.panel.statusArea['activities'];
     activitiesButtonLabel = activitiesButton._label.get_text();
 
-    layoutManager  = Main.layoutManager;
+    let layoutManager  = Main.layoutManager;
 
     hotCorner = layoutManager.hotCorners[0];
 

@@ -330,19 +330,19 @@ MicroHighlighter.prototype = {
 
 /**
  *
- * @param {ConfigManager} parent
+ * @param {ConfigManager} cm
  * @constructor
  */
-function ConfigDialog(ConfigManager) {
-    this._init(ConfigManager);
+function ConfigDialog(cm) {
+    this._init(cm);
 }
 ConfigDialog.prototype = {
     __proto__: ModalDialog.ModalDialog.prototype,
-    _init: function (ConfigManager) {
+    _init: function (cm) {
         ModalDialog.ModalDialog.prototype._init.call(this, { styleClass: 'config-menu-dialog' });
         this.dialogLayout.style = ("padding: 18px 25px 35px 25px;");
         this.buttonLayout.style = ("padding-top: 0px;");
-        this.cm = ConfigManager;
+        this.cm = cm;
         this.notebook = new NB();
         let monitor = this.cm.getLayoutManager().primaryMonitor;
         let buttons = [
