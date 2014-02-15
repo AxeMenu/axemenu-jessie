@@ -55,6 +55,60 @@ const getTextDirection = (ShellVersion[1] < 4) ? function (actor) {
     return actor.get_text_direction();
 };
 
+const HotCorner = new Lang.Class({
+    Name: 'HotCorner',
+    Extends: Layout.HotCorner,
+    _init: function (axemenu) {
+        this.axemenu = axemenu;
+        this.parent( axemenu._layoutManager, axemenu._layoutManager.primaryMonitor, 0, 0);
+        this.actor = new Clutter.Actor({ name: 'hot-corner-environs',
+            x: this._x, y: this._y,
+            width: 3,
+            height: 3,
+            reactive: true });
+
+        this._corner = new Clutter.Rectangle({ name: 'hot-corner',
+            width: 1,
+            height: 1,
+            opacity: 0,
+            reactive: true });
+        this._corner._delegate = this;
+
+        this.actor.add_child(this._corner);
+        axemenu._layoutManager.addChrome(this.actor);
+
+        if (Clutter.get_default_text_direction() == Clutter.TextDirection.RTL) {
+            this._corner.set_position(this.actor.width - this._corner.width, 0);
+            this.actor.set_anchor_point_from_gravity(Clutter.Gravity.NORTH_EAST);
+        } else {
+            this._corner.set_position(0, 0);
+        }
+
+        this.actor.connect('leave-event',
+            Lang.bind(this, this._onEnvironsLeft));
+        this._corner.connect('enter-event',
+            Lang.bind(this, this._onCornerEntered));
+        this._corner.connect('leave-event',
+            Lang.bind(this, this._onCornerLeft));
+    },
+    _onCornerEntered: function () {
+        if (!this._entered) {
+            this._entered = true;
+            if (!Main.overview.animationInProgress) {
+                this._rippleAnimation();
+                this._activationTime = Date.now() / 1000;
+                if (!this.axemenu.cm.axe_in_hotcorner) {
+                    Main.overview.toggle();
+                    global.log('asdasdsa');
+                } else {
+                    this.axemenu.toggleMenu();
+                }
+            }
+        }
+        return false;
+    }
+});
+
 
 function PlaceButton(place, button_name, iconSize) {
     this._init(place, button_name, iconSize);
@@ -335,31 +389,8 @@ ApplicationsButton.prototype = {
         this._box.add(this._label, { y_align: St.Align.MIDDLE, y_fill: false });
         this._label.set_text(_("Menu"));
         container.add_actor(this._box);
-        this._hotCorner = new Layout.HotCorner(layoutManager, layoutManager.monitor);
-        this._hotCorner._onCornerEntered = function () {
-            if (!this._entered) {
-                this._entered = true;
-                if (!Main.overview.animationInProgress) {
-                    this._activationTime = Date.now() / 1000;
-                    this.rippleAnimation();
-                    if (!this._parent.cm.axe_in_hotcorner) {
-                        Main.overview.toggle();
-                    } else {
-                        this._parent.toggleMenu();
-                    }
-                }
-            }
-            return false;
-        };
+        this._hotCorner = new HotCorner(this);
 
-        this._hotCorner.actor = new Clutter.Actor({ name: 'hot-corner-environs',
-            x: 0, y: 0,
-            width: 3,
-            height: 3,
-            reactive: true });
-
-
-        container.add_actor(this._hotCorner.actor);
         this._searchInactiveIcon = new St.Icon({ style_class: 'search-entry-icon', icon_name: 'edit-find'});
         this._searchActiveIcon = new St.Icon({ style_class: 'search-entry-icon', icon_name: 'edit-clear'});
 
@@ -372,15 +403,10 @@ ApplicationsButton.prototype = {
         this.cm = new ConfigManager(this);
         this.reloadFlag = true;
 
-        //this.placesManager = new PlaceDisplay.PlacesManager();
-
-
         this._createLayout();
         this._display();
         _installedChangedId = appsys.connect('installed-changed', Lang.bind(this, this.reDisplay));
         _favoritesChangedId = AppFavorites.getAppFavorites().connect('changed', Lang.bind(this, this.reDisplay));
-
-        //_bookmarksChangedId = this.placesManager.connect('bookmarks-updated',Lang.bind(this,this.reDisplay));
 
         this._bookmarksFile = this._findBookmarksFile();
         if (this._bookmarksFile){
@@ -418,6 +444,7 @@ ApplicationsButton.prototype = {
         } else {
             [ok, x, y] = actor.transform_stage_point(primary.x + primary.width, primary.y);
         }
+
         hotBox.x1 = Math.round(x);
         hotBox.x2 = hotBox.x1 + this._hotCorner.actor.width;
         hotBox.y1 = Math.round(y);
@@ -572,6 +599,21 @@ ApplicationsButton.prototype = {
                 let item_actor = children[this._selectedItemIndex];
                 item_actor.emit('clicked', 1);
                 return true;
+            } else if (this._activeContainer === this.searchBox || symbol == Clutter.KEY_Return){
+                // if we can open the specified location in search string with nautilus
+                let text = this.searchEntry.get_text().trim();
+                if (text.length > 1 && text[0] == '/'){
+                    let prefix = '';
+                    // check if we want a network resource
+                    if (text.substring(0, 2) == '//'){
+                        prefix += 'smb:'
+                    }
+                    Main.Util.spawnCommandLine("nautilus " + prefix + text);
+                    this.menu.close();
+                    global.log(text);
+                    return true;
+                }
+                return false;
             } else {
                 return false;
             }
@@ -1078,13 +1120,6 @@ ApplicationsButton.prototype = {
                 continue;
 
             let duplicate = false;
-            /*
-            for (let i = 0; i < this._places.special.length; i++) {
-                if (file.equal(this._places.special[i].file)) {
-                    duplicate = true;
-                    break;
-                }
-            } */
             if (duplicate)
                 continue;
             for (let i = 0; i < bookmarks.length; i++) {
@@ -1111,15 +1146,6 @@ ApplicationsButton.prototype = {
         return bookmarks;
     },
     _listDevices: function (pattern) {
-        //TODO fix devices
-        /*
-        let devices = this.placesManager.get('devices');
-        var res = new Array();
-        for (let id = 0; id < devices.length; id++) {
-            if (!pattern || devices[id].name.toLowerCase().indexOf(pattern) != -1) res.push(devices[id]);
-        }
-        return res;
-        */
         return [];
     },
     _listApplications: function (category_menu_id, pattern) {
@@ -1173,30 +1199,26 @@ function enable() {
     activitiesButton = Main.panel.statusArea['activities'];
     activitiesButtonLabel = activitiesButton._label.get_text();
 
-    let layoutManager  = Main.layoutManager;
+    hotCorner = Main.layoutManager.hotCorners[0];
 
-    hotCorner = layoutManager.hotCorners[0];
-
-    //TODO Do something with hot corner, for now its is always on
-    //hotCorner.destroy();
-    appsMenuButton = new ApplicationsButton(activitiesButton, layoutManager);
+    appsMenuButton = new ApplicationsButton(activitiesButton, Main.layoutManager);
     Main.panel._addToPanelBox('axeMenu', appsMenuButton, 0, Main.panel._leftBox);
-    //Main.panel.addToStatusArea('axeMenu', appsMenuButton, 0, 'left');
-    //Main.panel.actor.remove_actor(activitiesButton.actor);
     if (!appsMenuButton.cm.display_activites) {
         activitiesButton.actor.hide();
     }
+    hotCorner.destroy();
+    Main.layoutManager.hotCorners.splice(0, 1);
     activitiesButton._label.set_text("\u2318");
 }
 
 function disable() {
-    //hotCorner.actor.show();
     if (appsMenuButton.cm.display_activites) Main.panel._rightBox.remove_actor(activitiesButton.actor);
     insert_actor_to_box(Main.panel._leftBox, activitiesButton.actor, 0);
     activitiesButton._label.set_text(activitiesButtonLabel);
     appsys.disconnect(_installedChangedId);
     AppFavorites.getAppFavorites().disconnect(_favoritesChangedId);
     appsMenuButton.destroy();
+    Main.layoutManager._updateHotCorners();
     activitiesButton.actor.show();
 }
 

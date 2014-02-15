@@ -45,7 +45,6 @@ ApplicationButton.prototype = {
         let labelclass = AppFavorites.getAppFavorites().isFavorite(app.get_id()) ? 'application-button-label-favorites' : 'application-button-label';
         this.label = new St.Label({ text: this.app.get_name(), style_class: labelclass });
         this.icon = this.app.create_icon_texture(iconsize);
-        //this.icon = new St.Icon({icon_size: size, gicon: new Gio.ThemedIcon({name: app.get_name()})});
         this.buttonbox.add_actor(this.icon);
         this.buttonbox.add(this.label, { y_align: St.Align.MIDDLE, y_fill: false });
         this.actor.set_child(this.buttonbox);
@@ -118,9 +117,7 @@ BaseButton.prototype = {
         this.actor = new St.Button({ reactive: true, label: label, style_class: 'application-button am-' + icon + '-button', x_align: St.Align.START });
         this.actor._delegate = this;
         this.buttonbox = new St.BoxLayout();
-        //icontype = (icontype) ? icontype : St.IconType.SYMBOLIC;
         if (icon) {
-            //this.icon = new St.Icon({icon_name: icon, icon_size: iconsize});
             this.icon = new St.Icon({gicon: new Gio.ThemedIcon({name:icon}), icon_size:iconsize});
             this.buttonbox.add_actor(this.icon);
         }

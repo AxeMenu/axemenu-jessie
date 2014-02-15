@@ -85,11 +85,13 @@ ConfigManager.prototype = {
         this.display_icon = this.get_val('display_icon', true);
         this.is_hot_corner = this.get_val('is_hot_corner', true);
 
+
         if (!this.is_hot_corner) {
             this.parent._hotCorner.actor.hide();
         } else {
             this.parent._hotCorner.actor.show();
         }
+
 
         this.icon_name = this.get_val('icon_name', 'start-here');
         this.parent._icon.set_icon_name(this.icon_name);
