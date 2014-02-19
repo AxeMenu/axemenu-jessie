@@ -99,7 +99,6 @@ const HotCorner = new Lang.Class({
                 this._activationTime = Date.now() / 1000;
                 if (!this.axemenu.cm.axe_in_hotcorner) {
                     Main.overview.toggle();
-                    global.log('asdasdsa');
                 } else {
                     this.axemenu.toggleMenu();
                 }
