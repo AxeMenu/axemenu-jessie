@@ -18,12 +18,6 @@ const Version = Extension.imports.common.Version;
 const cleanActor = Extension.imports.common.cleanActor;
 const insert_actor_to_box = Extension.imports.common.insert_actor_to_box;
 
-
-/**
- *
- * @param parent {ApplicationsButton}
- * @constructor
- */
 function ConfigManager(parent) {
     this._init(parent);
 }
@@ -85,13 +79,11 @@ ConfigManager.prototype = {
         this.display_icon = this.get_val('display_icon', true);
         this.is_hot_corner = this.get_val('is_hot_corner', true);
 
-
         if (!this.is_hot_corner) {
             this.parent._hotCorner.actor.hide();
         } else {
             this.parent._hotCorner.actor.show();
         }
-
 
         this.icon_name = this.get_val('icon_name', 'start-here');
         this.parent._icon.set_icon_name(this.icon_name);
@@ -134,6 +126,7 @@ ConfigManager.prototype = {
         this.click_on_category = this.get_val('click_on_category', false);
         this.search_tool = decodeURIComponent(this.get_val('search_tool', "gnome-search-tool"));
         this.stored_category_id = this.get_val('category_menu_id', null);
+        //this.symbolic_icons = this.get_val('symbolic_icons', false);
     },
     saveConfig: function () {
         GLib.file_set_contents(this.config_file, JSON.stringify(this._conf), -1);
@@ -252,7 +245,7 @@ MicroHighlighter.prototype = {
                 global.set_cursor(Shell.Cursor.POINTING_HAND);
                 this._cursorChanged = true;
             } else if (urlId == -1) {
-                global.unset_cursor();
+                //global.unset_cursor();
                 this._cursorChanged = false;
             }
             return false;
@@ -262,7 +255,7 @@ MicroHighlighter.prototype = {
                 return;
             if (this._cursorChanged) {
                 this._cursorChanged = false;
-                global.unset_cursor();
+                //global.unset_cursor();
             }
         }));
     },
@@ -332,19 +325,19 @@ MicroHighlighter.prototype = {
 
 /**
  *
- * @param {ConfigManager} cm
+ * @param {ConfigManager} parent
  * @constructor
  */
-function ConfigDialog(cm) {
-    this._init(cm);
+function ConfigDialog(ConfigManager) {
+    this._init(ConfigManager);
 }
 ConfigDialog.prototype = {
     __proto__: ModalDialog.ModalDialog.prototype,
-    _init: function (cm) {
-        ModalDialog.ModalDialog.prototype._init.call(this, { styleClass: 'config-menu-dialog' });
+    _init: function (ConfigManager) {
+        ModalDialog.ModalDialog.prototype._init.call(this, { styleClass: 'config-menu-dialog', destroyOnClose:true });
         this.dialogLayout.style = ("padding: 18px 25px 35px 25px;");
         this.buttonLayout.style = ("padding-top: 0px;");
-        this.cm = cm;
+        this.cm = ConfigManager;
         this.notebook = new NB();
         let monitor = this.cm.getLayoutManager().primaryMonitor;
         let buttons = [
@@ -441,10 +434,9 @@ ConfigDialog.prototype = {
         tab = this.notebook.addTab(_('About'));
         let about = 'error';
         try {
-            about = GLib.file_get_contents(Extension.path + "/ABOUT")[1].toString();
-            about = about.replace('@version@', Version).replace('@e.g.o-version@', '0.8.4');
+            about = GLib.file_get_contents(extensionMeta.path + "/ABOUT")[1].toString();
+            about = about.replace('@version@', Version).replace('@e.g.o-version@', egoVersion);
         } catch (e) {
-            global.log(e);
         }
 
         let aboutText = new MicroHighlighter(this, about, false, true);
@@ -524,7 +516,7 @@ ConfigDialog.prototype = {
     close: function () {
         try {
             this.notebook.clean();
-            global.unset_cursor();
+            //global.unset_cursor();
             ModalDialog.ModalDialog.prototype.close.call(this, global.get_current_time());
         }
         catch (e) {

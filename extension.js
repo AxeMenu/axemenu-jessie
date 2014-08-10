@@ -46,7 +46,9 @@ let _installedChangedId;
 let _favoritesChangedId;
 let _bookmarksChangedId;
 let hotCorner;
-let egoVersion;
+let extensionMeta, egoVersion;
+let layoutManager;
+
 
 const TextDirection = (ShellVersion[1] < 4) ? St.TextDirection.LTR : Clutter.TextDirection.LTR;
 const getTextDirection = (ShellVersion[1] < 4) ? function (actor) {
@@ -137,7 +139,7 @@ PlaceButton.prototype = {
         this.buttonbox.add(this.label, { y_align: St.Align.MIDDLE, y_fill: false });
         this.actor.set_child(this.buttonbox);
         this.actor.connect('clicked', Lang.bind(this, function () {
-            let launchContext = global.create_app_launch_context();
+            let launchContext = global.create_app_launch_context(0, -1);
             Gio.AppInfo.launch_default_for_uri(place.get_uri(), launchContext);
             appsMenuButton.menu.close();
         }));
@@ -208,19 +210,11 @@ CategoryButton.prototype = {
 
 Signals.addSignalMethods(CategoryButton.prototype);
 
-/**
- *
- * @param app
- * @param iconSize
- * @param favoritesText
- * @param {ApplicationsButton} applicationsButton
- * @constructor
- */
-function FavoritesButton(app, iconSize, favoritesText, applicationsButton) {
-    this._init(app, iconSize, favoritesText, applicationsButton);
+function FavoritesButton(app, iconSize, favoritesText) {
+    this._init(app, iconSize, favoritesText);
 }
 FavoritesButton.prototype = {
-    _init: function (app, iconSize, favoritesText, applicationsButton) {
+    _init: function (app, iconSize, favoritesText) {
         this._app = app;
         this.actor = new St.Button({ reactive: true, style_class: 'applications-menu-favorites-button', x_align: favoritesText ? St.Align.START : St.Align.MIDDLE });
         this.actor._delegate = this;
@@ -235,7 +229,7 @@ FavoritesButton.prototype = {
         this._releaseEventId = this.actor.connect('button-release-event', Lang.bind(this, this._onButtonRelease));
         this._clickEventId = this.actor.connect('clicked', Lang.bind(this, function () {
             this._app.open_new_window(-1);
-            applicationsButton.menu.close();
+            appsMenuButton.menu.close();
         }));
         this.actor.connect('destroy', Lang.bind(this, this._onDestroy));
     },
@@ -261,10 +255,9 @@ function AxeButton(menuAlignment) {
     this._init(menuAlignment);
 }
 AxeButton.prototype = {
-    __proto__: PanelMenu.ButtonBox.prototype,
+    __proto__: PanelMenu.Button.prototype,
     _init: function (menuAlignment) {
-        PanelMenu.ButtonBox.prototype._init.call(this, { reactive: true, can_focus: true, track_hover: true });
-        //PanelMenu.Button.prototype._init.call(this, menuAlignment, 'axeMenu', false);
+        PanelMenu.Button.prototype._init.call(this, menuAlignment, 'axeMenu', false);
 
         this.actor.connect('button-press-event', Lang.bind(this, this._onButtonPress));
         this.actor.connect('key-press-event', Lang.bind(this, this._onSourceKeyPress));
@@ -283,13 +276,13 @@ AxeButton.prototype = {
         }
     },
     _getSettings: function () {
-        let source = Gio.SettingsSchemaSource.new_from_directory(Extension.path + "/schemas", Gio.SettingsSchemaSource.get_default(), false);
+        let source = Gio.SettingsSchemaSource.new_from_directory(extensionMeta.path + "/schemas", Gio.SettingsSchemaSource.get_default(), false);
         let schema = source.lookup('org.gnome.shell.extensions.axemenu.keybindings', false);
         return new Gio.Settings({settings_schema: schema});
     },
     toggleMenu: function () {
         if (!this.menu.isOpen) {
-            let monitor = this._layoutManager.primaryMonitor;
+            let monitor = layoutManager.primaryMonitor;
             this.menu.actor.style = ('max-height: ' + Math.round(monitor.height - Main.panel.actor.height - 80) + 'px;');
         } else {
             this.reloadFlag = false;
@@ -298,14 +291,8 @@ AxeButton.prototype = {
         this.menu.toggle();
     },
     _resetMenu: function () {
-        this.menu = new PopupMenu.PopupMenu(this.actor, this._menuAlignment, St.Side.TOP);
-        this.menu.actor.add_style_class_name('application-menu-background');
-        this.menu.connect('open-state-changed', Lang.bind(this, this._onOpenStateChanged));
-        Main.uiGroup.add_actor(this.menu.actor);
-        this.menu.actor.hide();
-        //Main.panel._menus.addMenu(this.menu);
-        this.menuManager = new PopupMenu.PopupMenuManager(this);
-        this.menuManager.addMenu(this.menu);
+	this.setMenu(new PopupMenu.PopupMenu(this.actor, this._menuAlignment, St.Side.TOP));
+	Main.panel.menuManager.addMenu(this.menu);
     },
     _onButtonPress: function (actor, event) {
         let button = event.get_button();
@@ -313,15 +300,10 @@ AxeButton.prototype = {
             this.toggleMenu();
         }
         else if (button == 3) {
-            try {
-                if (typeof this._configDialog === 'undefined') {
-                    this._configDialog = new ConfigDialog(this.cm);
-                }
-                this._configDialog.open();
+            if (typeof this._configDialog === 'undefined') {
+                this._configDialog = new ConfigDialog(this.cm);
             }
-            catch (e) {
-                global.log(e);
-            }
+            this._configDialog.open();
         }
     },
     _onSourceKeyPress: function (actor, event) {
@@ -443,7 +425,6 @@ ApplicationsButton.prototype = {
         } else {
             [ok, x, y] = actor.transform_stage_point(primary.x + primary.width, primary.y);
         }
-
         hotBox.x1 = Math.round(x);
         hotBox.x2 = hotBox.x1 + this._hotCorner.actor.width;
         hotBox.y1 = Math.round(y);
@@ -451,30 +432,29 @@ ApplicationsButton.prototype = {
         this._hotCorner.actor.allocate(hotBox, flags);
     },
     _createNetwork: function () {
+	var self = this;
         let button = new BaseButton(_("Network"), 'network-workgroup-symbolic', this.cm.leftpane_icon_size, null, function () {
             Main.Util.spawnCommandLine("nautilus network:///");
-            appsMenuButton.menu.close();
+            self.menu.toggle();
         });
         return button.actor;
     },
     _createSearch: function () {
+	var self = this;
         let button = new BaseButton(_("Search"), 'edit-find-symbolic', 22, null, function () {
-            Main.Util.spawnCommandLine(appsMenuButton.cm.search_tool);
-            appsMenuButton.menu.close();
+            Main.Util.spawnCommandLine(self.cm.search_tool);
+            self.menu.close();
         });
         return button.actor;
     },
     _createSettingsButton: function () {
         let buttonContainer = new St.BoxLayout({style: "padding: 10px 0 0 10px;", opacity: 120});
         let button = new BaseButton('', 'system-run', 18, null, function () {
-            try {
+            if (!appsMenuButton._configDialog) {
                 appsMenuButton._configDialog = new ConfigDialog(appsMenuButton.cm);
-                appsMenuButton._configDialog.open();
-                appsMenuButton.menu.close();
             }
-            catch (e) {
-                global.log(e);
-            }
+            appsMenuButton._configDialog.open();
+            appsMenuButton.menu.close();
         });
         button.actor.connect('enter-event', Lang.bind(this, function () {
             this.selectedAppTitle.set_text(_("AxeMenu settings"));
@@ -598,21 +578,6 @@ ApplicationsButton.prototype = {
                 let item_actor = children[this._selectedItemIndex];
                 item_actor.emit('clicked', 1);
                 return true;
-            } else if (this._activeContainer === this.searchBox || symbol == Clutter.KEY_Return){
-                // if we can open the specified location in search string with nautilus
-                let text = this.searchEntry.get_text().trim();
-                if (text.length > 1 && text[0] == '/'){
-                    let prefix = '';
-                    // check if we want a network resource
-                    if (text.substring(0, 2) == '//'){
-                        prefix += 'smb:'
-                    }
-                    Main.Util.spawnCommandLine("nautilus " + prefix + text);
-                    this.menu.close();
-                    global.log(text);
-                    return true;
-                }
-                return false;
             } else {
                 return false;
             }
@@ -754,7 +719,7 @@ ApplicationsButton.prototype = {
             if (nextType == GMenu.TreeItemType.ENTRY) {
                 var entry = iter.get_entry();
                 if (!entry.get_app_info().get_nodisplay()) {
-                    var app = appsys.lookup_app_by_tree_entry(entry);
+                    var app = appsys.lookup_app(entry.get_desktop_file_id());
                     if (!this.applicationsByCategory[dir.get_menu_id()]) this.applicationsByCategory[dir.get_menu_id()] = new Array();
                     this.applicationsByCategory[dir.get_menu_id()].push(app);
                 }
@@ -900,7 +865,7 @@ ApplicationsButton.prototype = {
         for (let i = 0; i < launchers.length; ++i) {
             let app = appSys.lookup_app(launchers[i]);
             if (app) {
-                let button = new FavoritesButton(app, this.cm.favorites_icon_size, this.cm.favorites_text, this);
+                let button = new FavoritesButton(app, this.cm.favorites_icon_size, this.cm.favorites_text);
                 this.favoritesTable.add(button.actor, { row: rownum, col: column });
                 this._addFavEnterEvent(button, Lang.bind(this, function () {
                     this.selectedAppTitle.set_text(button._app.get_name());
@@ -975,7 +940,9 @@ ApplicationsButton.prototype = {
         }
         //Load categories
         this.applicationsByCategory = {};
-        let tree = appsys.get_tree();
+        //let tree = appsys.get_tree();
+	let tree = new GMenu.Tree({menu_basename:'applications.menu'});
+	tree.load_sync();
         let root = tree.get_root_directory();
         let categoryButton = new CategoryButton(this, null, this.cm.category_icon_size);
         categoryButton.actor.style_class = "category-button-selected";
@@ -1223,6 +1190,7 @@ function disable() {
 
 function init(metadata) {
     let localePath = metadata.path + '/locale';
+    extensionMeta = metadata;
     egoVersion = ShellVersion[1] < 4 ? metadata.version : metadata.metadata['version'];
     Gettext.bindtextdomain('axemenu', localePath);
 }
