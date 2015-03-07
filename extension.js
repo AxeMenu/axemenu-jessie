@@ -1,3 +1,4 @@
+
 const Mainloop = imports.mainloop;
 const GMenu = imports.gi.GMenu;
 const Lang = imports.lang;
@@ -110,7 +111,6 @@ const HotCorner = new Lang.Class({
     }
 });
 
-
 function PlaceButton(place, button_name, iconSize) {
     this._init(place, button_name, iconSize);
 }
@@ -210,11 +210,11 @@ CategoryButton.prototype = {
 
 Signals.addSignalMethods(CategoryButton.prototype);
 
-function FavoritesButton(app, iconSize, favoritesText) {
-    this._init(app, iconSize, favoritesText);
+function FavoritesButton(app, iconSize, favoritesText, applicationsButton) {
+    this._init(app, iconSize, favoritesText, applicationsButton);
 }
 FavoritesButton.prototype = {
-    _init: function (app, iconSize, favoritesText) {
+    _init: function (app, iconSize, favoritesText, applicationsButton) {
         this._app = app;
         this.actor = new St.Button({ reactive: true, style_class: 'applications-menu-favorites-button', x_align: favoritesText ? St.Align.START : St.Align.MIDDLE });
         this.actor._delegate = this;
@@ -229,7 +229,7 @@ FavoritesButton.prototype = {
         this._releaseEventId = this.actor.connect('button-release-event', Lang.bind(this, this._onButtonRelease));
         this._clickEventId = this.actor.connect('clicked', Lang.bind(this, function () {
             this._app.open_new_window(-1);
-            appsMenuButton.menu.close();
+            applicationsButton.menu.close();
         }));
         this.actor.connect('destroy', Lang.bind(this, this._onDestroy));
     },
@@ -258,9 +258,6 @@ AxeButton.prototype = {
     __proto__: PanelMenu.Button.prototype,
     _init: function (menuAlignment) {
         PanelMenu.Button.prototype._init.call(this, menuAlignment, 'axeMenu', false);
-
-        this.actor.connect('button-press-event', Lang.bind(this, this._onButtonPress));
-        this.actor.connect('key-press-event', Lang.bind(this, this._onSourceKeyPress));
         this._menuAlignment = menuAlignment;
         this._resetMenu();
         if (ShellVersion[1] < 4) {
@@ -282,7 +279,7 @@ AxeButton.prototype = {
     },
     toggleMenu: function () {
         if (!this.menu.isOpen) {
-            let monitor = layoutManager.primaryMonitor;
+            let monitor = this._layoutManager.primaryMonitor;
             this.menu.actor.style = ('max-height: ' + Math.round(monitor.height - Main.panel.actor.height - 80) + 'px;');
         } else {
             this.reloadFlag = false;
@@ -291,8 +288,8 @@ AxeButton.prototype = {
         this.menu.toggle();
     },
     _resetMenu: function () {
-	this.setMenu(new PopupMenu.PopupMenu(this.actor, this._menuAlignment, St.Side.TOP));
-	Main.panel.menuManager.addMenu(this.menu);
+	    this.setMenu(new PopupMenu.PopupMenu(this.actor, this._menuAlignment, St.Side.TOP));
+	    Main.panel.menuManager.addMenu(this.menu);
     },
     _onButtonPress: function (actor, event) {
         let button = event.get_button();
@@ -300,9 +297,7 @@ AxeButton.prototype = {
             this.toggleMenu();
         }
         else if (button == 3) {
-            if (typeof this._configDialog === 'undefined') {
-                this._configDialog = new ConfigDialog(this.cm);
-            }
+            this._configDialog = new ConfigDialog(this.cm);
             this._configDialog.open();
         }
     },
@@ -432,7 +427,7 @@ ApplicationsButton.prototype = {
         this._hotCorner.actor.allocate(hotBox, flags);
     },
     _createNetwork: function () {
-	var self = this;
+	    var self = this;
         let button = new BaseButton(_("Network"), 'network-workgroup-symbolic', this.cm.leftpane_icon_size, null, function () {
             Main.Util.spawnCommandLine("nautilus network:///");
             self.menu.toggle();
@@ -440,7 +435,7 @@ ApplicationsButton.prototype = {
         return button.actor;
     },
     _createSearch: function () {
-	var self = this;
+	    var self = this;
         let button = new BaseButton(_("Search"), 'edit-find-symbolic', 22, null, function () {
             Main.Util.spawnCommandLine(self.cm.search_tool);
             self.menu.close();
@@ -450,9 +445,7 @@ ApplicationsButton.prototype = {
     _createSettingsButton: function () {
         let buttonContainer = new St.BoxLayout({style: "padding: 10px 0 0 10px;", opacity: 120});
         let button = new BaseButton('', 'system-run', 18, null, function () {
-            if (!appsMenuButton._configDialog) {
-                appsMenuButton._configDialog = new ConfigDialog(appsMenuButton.cm);
-            }
+            appsMenuButton._configDialog = new ConfigDialog(appsMenuButton.cm);
             appsMenuButton._configDialog.open();
             appsMenuButton.menu.close();
         });
@@ -865,7 +858,7 @@ ApplicationsButton.prototype = {
         for (let i = 0; i < launchers.length; ++i) {
             let app = appSys.lookup_app(launchers[i]);
             if (app) {
-                let button = new FavoritesButton(app, this.cm.favorites_icon_size, this.cm.favorites_text);
+                let button = new FavoritesButton(app, this.cm.favorites_icon_size, this.cm.favorites_text, this);
                 this.favoritesTable.add(button.actor, { row: rownum, col: column });
                 this._addFavEnterEvent(button, Lang.bind(this, function () {
                     this.selectedAppTitle.set_text(button._app.get_name());
@@ -940,9 +933,8 @@ ApplicationsButton.prototype = {
         }
         //Load categories
         this.applicationsByCategory = {};
-        //let tree = appsys.get_tree();
-	let tree = new GMenu.Tree({menu_basename:'applications.menu'});
-	tree.load_sync();
+	    let tree = new GMenu.Tree({menu_basename:'applications.menu'});
+	    tree.load_sync();
         let root = tree.get_root_directory();
         let categoryButton = new CategoryButton(this, null, this.cm.category_icon_size);
         categoryButton.actor.style_class = "category-button-selected";
@@ -1160,31 +1152,37 @@ ApplicationsButton.prototype = {
     }
 };
 
+
+
 function enable() {
 
     activitiesButton = Main.panel.statusArea['activities'];
     activitiesButtonLabel = activitiesButton._label.get_text();
 
-    hotCorner = Main.layoutManager.hotCorners[0];
+    layoutManager  = Main.layoutManager;
 
-    appsMenuButton = new ApplicationsButton(activitiesButton, Main.layoutManager);
+    hotCorner = layoutManager.hotCorners[0];
+
+    //TODO Do something with hot corner, for now its is always on
+    //hotCorner.destroy();
+    appsMenuButton = new ApplicationsButton(activitiesButton, layoutManager);
     Main.panel._addToPanelBox('axeMenu', appsMenuButton, 0, Main.panel._leftBox);
+    //Main.panel.addToStatusArea('axeMenu', appsMenuButton, 0, 'left');
+    //Main.panel.actor.remove_actor(activitiesButton.actor);
     if (!appsMenuButton.cm.display_activites) {
         activitiesButton.actor.hide();
     }
-    hotCorner.destroy();
-    Main.layoutManager.hotCorners.splice(0, 1);
     activitiesButton._label.set_text("\u2318");
 }
 
 function disable() {
+    //hotCorner.actor.show();
     if (appsMenuButton.cm.display_activites) Main.panel._rightBox.remove_actor(activitiesButton.actor);
     insert_actor_to_box(Main.panel._leftBox, activitiesButton.actor, 0);
     activitiesButton._label.set_text(activitiesButtonLabel);
     appsys.disconnect(_installedChangedId);
     AppFavorites.getAppFavorites().disconnect(_favoritesChangedId);
     appsMenuButton.destroy();
-    Main.layoutManager._updateHotCorners();
     activitiesButton.actor.show();
 }
 
